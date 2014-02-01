@@ -51,10 +51,10 @@ a { background: none repeat scroll 0 0 rgba(0, 0, 0, 0); font-size: 100%; margin
 
 #site-content { background-color: #5c5c5c; margin-top: 14px; padding-bottom: 0; width: 1020px; }
 
-#site-footer { background-color: #484848; height: 131px; margin: 0; position: relative;color: #fff; }
+#site-footer { background-color: #484848; height: 80px; margin: 0; position: relative;color: #fff; }
 
-    #site-footer > .footer-logo { background: url("/Content/Images/footer-logo.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0); height: 37px; left: 23px; position: absolute; top: 25px; width: 191px; }
+    #site-footer > .footer-logo { background: url("/Content/Images/footer-logo.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0); height: 37px; left: 23px; position: absolute; top: 5px; width: 191px; }
 
-    #site-footer > .footer-copyright { left: 23px; position: absolute; top: 73px; }
+    #site-footer > .footer-copyright { left: 23px; position: absolute; top: 45px; }
 p.text-12 { line-height: 15px; }
 .text-12 { font-family: "museo-sans",museo,"helvetica neue",helvetica,arial,sans-serif; font-size: 12px; font-weight: 500; }
