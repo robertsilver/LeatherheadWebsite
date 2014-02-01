@@ -50,8 +50,9 @@ a { background: none repeat scroll 0 0 rgba(0, 0, 0, 0); font-size: 100%; margin
 .text-14 { font-family: "museo-sans",museo,"helvetica neue",helvetica,arial,sans-serif; font-size: 14px; font-weight: 500; }
 
 #site-content { background-color: #5c5c5c; margin-top: 14px; padding-bottom: 0; width: 1020px; }
+    #site-content .main { float: left; width: 75%; overflow: hidden; display: table-cell; border-right: 1px solid #fff;padding-bottom: 20px; }
 
-#site-footer { background-color: #484848; height: 80px; margin: 0; position: relative;color: #fff; }
+#site-footer { background-color: #484848; height: 80px; margin: 0; position: relative; color: #fff; }
 
     #site-footer > .footer-logo { background: url("/Content/Images/footer-logo.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0); height: 37px; left: 23px; position: absolute; top: 5px; width: 191px; }
 
