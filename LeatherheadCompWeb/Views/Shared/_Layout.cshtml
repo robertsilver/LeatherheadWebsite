@@ -10,14 +10,23 @@
 <body>
     <div id="site-wrapper">
         <div id="site-header">
-            <a class="site-logo" href="/"></a>
+            <div style="float: left;">
+                <a class="site-logo" href="/"></a>
+            </div>
+            <div style="float: right;height: 77px; left: 545px; position: absolute; top: 30px;">
+                <img src="~/Content/Images/Introduction.jpg" />
+            </div>
+            <div class="cf"></div>
         </div>
         <nav class="text-14" id="main-nav">
             <ul>
                 <li class="is-selected"><a href="/">Home</a></li>
-                <li><a href="/our-clients">Our Clients</a></li>
-                <li><a href="/contact">Contact Us</a></li>
-                <li class="is-last"><a href="/tools">Tools</a></li>
+                <li><a href="/our-clients">Next Event</a></li>
+                <li><a href="/contact">Future Events</a></li>
+                <li class=""><a href="/tools">Meet the team</a></li>
+                <li class=""><a href="/tools">Results</a></li>
+                <li class=""><a href="/tools">Contact Us</a></li>
+                <li class="is-last"><a href="/tools">Dance related</a></li>
             </ul>
         </nav>
         <div id="site-content">
@@ -25,17 +34,14 @@
                 @RenderBody()
             </div>
             <div class="announcements">
-                <p>
+                <p class="sponsor">
                     Competitions sponsored by<br />
                     <img border="0" src="~/Content/Images/SparklesDesign.jpg" />
                 </p>
-                test<br />
-                test<br />
-                test<br />
-                test<br />
-                test<br />
-                test<br />
-                test<br />
+                <hr />
+                <p>
+                    The entrance fee is only £13.00 (£7.00 for spectators) and the large car park remains free of charge Juveniles/Juniors only £9.50 and Parents of Juveniles/Junior £7.00!!
+                </p>
             </div>
             <div class="cf"></div>
         </div>
