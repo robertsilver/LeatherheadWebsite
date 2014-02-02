@@ -135,6 +135,7 @@
   <ItemGroup>
     <Content Include="Content\CSS\announcements.css" />
     <Content Include="Content\CSS\ContactUs.css" />
+    <Content Include="Content\CSS\DanceRelated.css" />
     <Content Include="Content\CSS\FutureEvents.css" />
     <Content Include="Content\CSS\home.css" />
     <Content Include="Content\CSS\MeetTheTeam.css" />
@@ -245,6 +246,7 @@
     <Content Include="Views\Home\FutureEvents.cshtml" />
     <Content Include="Views\Home\MeetTheTeam.cshtml" />
     <Content Include="Views\Home\ContactUs.cshtml" />
+    <Content Include="Views\Home\DanceRelated.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,2 +1,5 @@
-﻿.contact-us h2 { margin: 0;padding: 0;font-weight: bold;font-size: 28px;}
-.contact-us .events-table  { margin-top: 20px;}
+﻿.contact-us  { margin: 20px 0 0 20px;font-size: 16px;}
+.contact-us h2 { margin: 0;padding: 0;font-weight: bold;font-size: 28px;}
+.contact-us h3 {text-decoration: underline; font-weight: bold;font-size: 20px;}
+.contact-us p {margin-left: 20px;}
+.contact-us label.prefix {color: #FFFFFF; font-weight: bold; margin: 0 10px 0 0; text-align: right; width: 65px; display: inline-block;}

@@ -38,6 +38,12 @@ namespace LeatherheadCompWeb.App_Start
                 url: "Home/ContactUs",
                 defaults: new {controller = "Home", action = "ContactUs"}
                 );
+
+            routes.MapRoute(
+                name: "DanceRelated",
+                url: "Home/DanceRelated",
+                defaults: new {controller = "Home", action = "DanceRelated"}
+                );
         }
     }
 }
