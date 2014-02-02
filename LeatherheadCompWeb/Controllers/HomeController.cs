@@ -28,5 +28,10 @@ namespace LeatherheadCompWeb.Controllers
         {
             return View();
         }
+
+        public ActionResult DanceRelated()
+        {
+            return View();
+        }
     }
 }

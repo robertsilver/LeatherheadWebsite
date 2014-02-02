@@ -1,3 +1,8 @@
-﻿.results h2 { margin: 0;padding: 0;font-weight: bold;font-size: 28px;}
+﻿.results  { margin: 20px 0 0 20px;font-size: 16px;}
+.results h2 { margin: 0;padding: 0;font-weight: bold;font-size: 28px;}
 .results .result-table { margin-top: 20px;}
-.results .result-table .results-link { text-decoration: underline;}
+.results .result-table{ border: 1px solid #ffffff; text-align: center; margin: 0 auto; margin-top: 10px;}
+.results .result-table .section { font-weight: bold;}
+.results .result-table .pull-left { text-align: left;}
+.results .result-table .pull-right { text-align: right;}
+.results .result-table a { text-decoration: underline;}
