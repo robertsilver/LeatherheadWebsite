@@ -50,7 +50,7 @@ a { background: none repeat scroll 0 0 rgba(0, 0, 0, 0); font-size: 100%; margin
 .text-14 { font-family: "museo-sans",museo,"helvetica neue",helvetica,arial,sans-serif; font-size: 14px; font-weight: 500; }
 
 #site-content { background-color: #5c5c5c; margin-top: 14px; padding-bottom: 0; width: 1020px; }
-    #site-content .main { float: left; width: 75%; overflow: hidden; display: table-cell; border-right: 1px solid #fff;padding-bottom: 20px; }
+    #site-content .main { float: left; width: 74%; overflow: hidden; display: table-cell; border-right: 1px solid #fff; padding: 0 5px 20px 10px; }
 
 #site-footer { background-color: #484848; height: 80px; margin: 0; position: relative; color: #fff; }
 
@@ -59,3 +59,6 @@ a { background: none repeat scroll 0 0 rgba(0, 0, 0, 0); font-size: 100%; margin
     #site-footer > .footer-copyright { left: 23px; position: absolute; top: 45px; }
 p.text-12 { line-height: 15px; }
 .text-12 { font-family: "museo-sans",museo,"helvetica neue",helvetica,arial,sans-serif; font-size: 12px; font-weight: 500; }
+table, td { border: 1px solid #ffffff; padding: 5px; }
+table { border-collapse: collapse; }
+table, td { border: 1px solid #ffffff; }

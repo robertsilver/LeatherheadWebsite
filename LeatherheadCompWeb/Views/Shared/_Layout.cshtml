@@ -4,8 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    @Scripts.Render("~/bundles/jquery")
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/lib")
 </head>
 <body>
     <div id="site-wrapper">
@@ -21,11 +23,10 @@
         <nav class="text-14" id="main-nav">
             <ul>
                 <li class="is-selected"><a href="/">Home</a></li>
-                <li><a href="/our-clients">Next Event</a></li>
-                <li><a href="/contact">Future Events</a></li>
-                <li class=""><a href="/tools">Meet the team</a></li>
-                <li class=""><a href="/tools">Results</a></li>
-                <li class=""><a href="/tools">Contact Us</a></li>
+                <li class="">@Html.ActionLink("Results", "Results", "Home")</li>
+                <li class="">@Html.ActionLink("Future Events", "FutureEvents", "Home")</li>
+                <li class="">@Html.ActionLink("Meet The Team", "MeetTheTeam", "Home")</li>
+                <li class="">@Html.ActionLink("Contact Us", "ContactUs", "Home")</li>
                 <li class="is-last"><a href="/tools">Dance related</a></li>
             </ul>
         </nav>
@@ -53,7 +54,7 @@
             <p class="footer-copyright text-12">&copy; Robert's Design @DateTime.Today.Year</p>
         </div>
     </div>
-    @Scripts.Render("~/bundles/jquery")
+
     @RenderSection("scripts", required: false)
 </body>
 </html>

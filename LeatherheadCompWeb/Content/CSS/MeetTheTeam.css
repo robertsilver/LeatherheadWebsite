@@ -1,0 +1,10 @@
+﻿.meet-the-team h2 { margin: 0; padding: 0; font-weight: bold; font-size: 28px; }
+.meet-the-team .team-table { margin-top: 20px; }
+
+.meet-the-team .members { margin: 0 0 10px; width: 100%; }
+    .meet-the-team .members .popup-trigger { height: 130px; }
+    .meet-the-team .members ul li { display: block; float: left; height: 130px; list-style-type: none; margin: 15px 0 5px; width: 178px; }
+        .meet-the-team .members ul li p { color: #FFFFFF; font-weight: bold; margin: 0; }
+    .meet-the-team .members .popup-content { padding: 4px; width: 300px; position: absolute; display: none; border: #666666 solid 2px; background-color: #e1e1e1; z-index: 2; }
+        .meet-the-team .members .popup-content p { color: #666666; padding: 0; margin: 0; }
+        .meet-the-team .members .popup-content a { color: #333; }

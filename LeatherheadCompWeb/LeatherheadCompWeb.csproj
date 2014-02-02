@@ -134,11 +134,25 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\CSS\announcements.css" />
+    <Content Include="Content\CSS\ContactUs.css" />
+    <Content Include="Content\CSS\FutureEvents.css" />
     <Content Include="Content\CSS\home.css" />
+    <Content Include="Content\CSS\MeetTheTeam.css" />
+    <Content Include="Content\CSS\Results.css" />
     <Content Include="Content\Images\footer-logo.jpg" />
+    <Content Include="Content\Images\georgina.jpg" />
     <Content Include="Content\Images\Introduction.jpg" />
+    <Content Include="Content\Images\iris.jpg" />
+    <Content Include="Content\Images\john.jpg" />
+    <Content Include="Content\Images\juliec.jpg" />
+    <Content Include="Content\Images\julief.jpg" />
+    <Content Include="Content\Images\morris.jpg" />
+    <Content Include="Content\Images\ron.jpg" />
+    <Content Include="Content\Images\sheila.jpg" />
     <Content Include="Content\Images\site-logo.jpg" />
     <Content Include="Content\Images\SparklesDesign.jpg" />
+    <Content Include="Content\Images\steve.jpg" />
+    <Content Include="Content\Images\valerie.jpg" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -195,25 +209,26 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\CSS\Site.css" />
-    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <None Include="Scripts\Lib\jquery-1.8.2.intellisense.js" />
     <Content Include="Results\Temporary.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Scripts\jquery-1.8.2.js" />
-    <Content Include="Scripts\jquery-1.8.2.min.js" />
-    <None Include="Scripts\jquery.validate-vsdoc.js" />
-    <Content Include="Scripts\jquery-ui-1.8.24.js" />
-    <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
-    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
-    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
-    <Content Include="Scripts\jquery.validate.js" />
-    <Content Include="Scripts\jquery.validate.min.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="Scripts\knockout-2.2.0.debug.js" />
-    <Content Include="Scripts\knockout-2.2.0.js" />
-    <Content Include="Scripts\modernizr-2.6.2.js" />
-    <Content Include="Scripts\_references.js" />
+    <Content Include="Scripts\App\lhc.js" />
+    <Content Include="Scripts\Lib\jquery-1.8.2.js" />
+    <Content Include="Scripts\Lib\jquery-1.8.2.min.js" />
+    <None Include="Scripts\Lib\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\Lib\jquery-ui-1.8.24.js" />
+    <Content Include="Scripts\Lib\jquery-ui-1.8.24.min.js" />
+    <Content Include="Scripts\Lib\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\Lib\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\Lib\jquery.validate.js" />
+    <Content Include="Scripts\Lib\jquery.validate.min.js" />
+    <Content Include="Scripts\Lib\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\Lib\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\Lib\knockout-2.2.0.debug.js" />
+    <Content Include="Scripts\Lib\knockout-2.2.0.js" />
+    <Content Include="Scripts\Lib\modernizr-2.6.2.js" />
+    <Content Include="Scripts\Lib\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -226,6 +241,10 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Results.cshtml" />
+    <Content Include="Views\Home\FutureEvents.cshtml" />
+    <Content Include="Views\Home\MeetTheTeam.cshtml" />
+    <Content Include="Views\Home\ContactUs.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
