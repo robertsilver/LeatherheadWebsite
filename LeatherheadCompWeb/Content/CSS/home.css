@@ -7,9 +7,6 @@
 #site-content .doors-open { font-weight: bold; text-align: center; font-size: 14px; margin-top: 5px; }
 #site-content .adjudicators { font-weight: bold; text-align: center; font-size: 14px; margin-top: 5px; }
 #site-content .programme { border: 1px solid #ffffff; text-align: center; margin: 0 auto; margin-top: 10px;}
-table, td { border: 1px solid #ffffff; padding: 5px; }
-table { border-collapse: collapse; }
-table, td { border: 1px solid #ffffff; }
 #site-content .programme .section { font-weight: bold;}
 #site-content .programme .pull-left { text-align: left;}
 #site-content .programme .pull-right { text-align: right;}

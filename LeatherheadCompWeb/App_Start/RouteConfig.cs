@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace LeatherheadCompWeb
+namespace LeatherheadCompWeb.App_Start
 {
     public class RouteConfig
     {
@@ -16,8 +12,32 @@ namespace LeatherheadCompWeb
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );
+                defaults: new {controller = "Home", action = "Index", id = UrlParameter.Optional}
+                );
+
+            routes.MapRoute(
+                name: "Results",
+                url: "Home/Results",
+                defaults: new {controller = "Home", action = "Results"}
+                );
+
+            routes.MapRoute(
+                name: "FutureEvents",
+                url: "Home/FutureEvents",
+                defaults: new {controller = "Home", action = "FutureEvents"}
+                );
+
+            routes.MapRoute(
+                name: "MeetTheTeam",
+                url: "Home/MeetTheTeam",
+                defaults: new {controller = "Home", action = "MeetTheTeam"}
+                );
+
+            routes.MapRoute(
+                name: "ContactUs",
+                url: "Home/ContactUs",
+                defaults: new {controller = "Home", action = "ContactUs"}
+                );
         }
     }
 }
