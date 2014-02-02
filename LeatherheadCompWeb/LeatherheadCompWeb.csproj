@@ -210,6 +210,8 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\CSS\Site.css" />
+    <None Include="Properties\PublishProfiles\LHC.pubxml" />
+    <None Include="Properties\PublishProfiles\LocalMachine.pubxml" />
     <None Include="Scripts\Lib\jquery-1.8.2.intellisense.js" />
     <Content Include="Results\Temporary.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -230,7 +232,9 @@
     <Content Include="Scripts\Lib\knockout-2.2.0.js" />
     <Content Include="Scripts\Lib\modernizr-2.6.2.js" />
     <Content Include="Scripts\Lib\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
