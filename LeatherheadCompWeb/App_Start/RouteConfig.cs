@@ -11,38 +11,38 @@ namespace LeatherheadCompWeb.App_Start
 
             routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
+                url: "",
                 defaults: new {controller = "Home", action = "Index", id = UrlParameter.Optional}
                 );
 
             routes.MapRoute(
-                name: "Results",
-                url: "Home/Results",
-                defaults: new {controller = "Home", action = "Results"}
+                name: "",
+                url: "Result",
+                defaults: new { controller = "Results", action = "Index" }
                 );
 
             routes.MapRoute(
-                name: "FutureEvents",
-                url: "Home/FutureEvents",
-                defaults: new {controller = "Home", action = "FutureEvents"}
+                name: "",
+                url: "FutureEvents",
+                defaults: new { controller = "FutureEvents", action = "Index" }
                 );
 
             routes.MapRoute(
-                name: "MeetTheTeam",
+                name: "",
                 url: "Home/MeetTheTeam",
                 defaults: new {controller = "Home", action = "MeetTheTeam"}
                 );
 
             routes.MapRoute(
-                name: "ContactUs",
+                name: "",
                 url: "Home/ContactUs",
                 defaults: new {controller = "Home", action = "ContactUs"}
                 );
 
             routes.MapRoute(
-                name: "DanceRelated",
-                url: "Home/DanceRelated",
-                defaults: new {controller = "Home", action = "DanceRelated"}
+                name: "",
+                url: "DanceRelated",
+                defaults: new { controller = "DanceRelated", action = "Index" }
                 );
         }
     }

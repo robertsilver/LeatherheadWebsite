@@ -126,7 +126,10 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\DanceRelatedController.cs" />
+    <Compile Include="Controllers\FutureEventsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ResultsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -213,7 +216,7 @@
     <None Include="Properties\PublishProfiles\LHC.pubxml" />
     <None Include="Properties\PublishProfiles\LocalMachine.pubxml" />
     <None Include="Scripts\Lib\jquery-1.8.2.intellisense.js" />
-    <Content Include="Results\Temporary.txt">
+    <Content Include="Results\26-Jan-2014\Temporary.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Scripts\App\lhc.js" />
@@ -246,11 +249,11 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Results.cshtml" />
-    <Content Include="Views\Home\FutureEvents.cshtml" />
     <Content Include="Views\Home\MeetTheTeam.cshtml" />
     <Content Include="Views\Home\ContactUs.cshtml" />
-    <Content Include="Views\Home\DanceRelated.cshtml" />
+    <Content Include="Views\Results\Index.cshtml" />
+    <Content Include="Views\DanceRelated\Index.cshtml" />
+    <Content Include="Views\FutureEvents\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
