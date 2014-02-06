@@ -5,7 +5,7 @@
         
         nonModelPopup = function() {
 
-            $(".pop-container").hover(function() {
+            $(".popup-container").hover(function () {
             }, function() {
                 if (currentPopup != null) {
                     currentPopup.animate({ opacity: "hide" }, "fast");
