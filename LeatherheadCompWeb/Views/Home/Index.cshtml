@@ -4,7 +4,6 @@
 
 <div class="competition-name">
     Cairncross/Follett Awards Day<br />
-
 </div>
 <div class="national-league-event">
     A DPA/BDF National League Event
@@ -15,16 +14,40 @@
 <div class="venue">
     Tylney Ballroom, Leatherhead Leisure Centre, Guildford Road, Leatherhead, Surrey, KT22 9BL
 </div>
+
 <div class="sponsor">
     Sponsored by <a href="http://www.sparkledesignsuk.com" target="_blank">Sparkle Designs</a>
 </div>
 <div class="doors-open">
     Doors open 10.15am - 7.00pm
 </div>
-<div class="adjudicators">
-    Adjudicators: Peter Nash & more to be announced
+<div class="popup-container">
+    <div class="adjudicators">
+        Adjudicators: <span id="pop_trigGC" class="popup-trigger">Peter Nash</span> & more to be announced
+    </div>
+    <!-- Note: these popup-content classes must stay within the popup-container class.
+        Otherwise users cannot click on the items in the popup due to the javascript rules in the lhc.js file. -->
+    <div id="pop_contGC" class="popup-content">
+        <p>
+            Former twice World Rep (NZ), UK U/21 Cld Amateur Champion, Open UK 10 Dance Pro Finalist & UK Cld Latin Finalist, European 10 Dance Semi-Finalist, WDC International & BDC Championship Adjudicator
+        </p>
+        <p>
+            <a href="http://www.peternashdance.co.uk" target="_blank"><strong>Web:</strong> www.peternashdance.co.uk</a>
+        </p>
+        <p>
+            <a href="mailto:pn_hyper@yahoo.co.uk" target="_blank"><strong>Email:</strong> pn_hyper@yahoo.co.uk</a>
+        </p>
+        <p>
+            <a href="tel:07795 274148" target="_blank"><strong>Tel:</strong> 07795 274148</a>
+        </p>
+        <p>
+            Available for Coaching, Adjudicating, Lectures and Dance Holidays
+        </p>
+    </div>
+    <div id="pop_contRS" class="popup-content">
+       
+    </div>
 </div>
-
 <table class="programme">
     <tr>
         <td colspan="4" class="section">Juvenile Section - From 10.45am
@@ -213,3 +236,9 @@
         <td class="pull-right">W.T.F.Q (VW)</td>
     </tr>
 </table>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        lhc.nonModelPopup();
+    });
+</script>
