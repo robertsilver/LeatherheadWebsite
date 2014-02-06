@@ -216,7 +216,7 @@
     <None Include="Properties\PublishProfiles\LHC.pubxml" />
     <None Include="Properties\PublishProfiles\LocalMachine.pubxml" />
     <None Include="Scripts\Lib\jquery-1.8.2.intellisense.js" />
-    <Content Include="Results\26-Jan-2014\Temporary.txt">
+    <Content Include="ResultFiles\26-Jan-2014\Temporary.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Scripts\App\lhc.js" />

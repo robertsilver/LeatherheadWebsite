@@ -17,7 +17,7 @@ namespace LeatherheadCompWeb.App_Start
 
             routes.MapRoute(
                 name: "",
-                url: "Result",
+                url: "Results",
                 defaults: new { controller = "Results", action = "Index" }
                 );
 
