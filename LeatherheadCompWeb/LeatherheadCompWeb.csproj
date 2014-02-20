@@ -215,6 +215,9 @@
     <Content Include="Content\CSS\Site.css" />
     <None Include="Properties\PublishProfiles\LHC.pubxml" />
     <None Include="Properties\PublishProfiles\LocalMachine.pubxml" />
+    <Content Include="ResultFiles\26-Jan-2014\Results-1.pdf" />
+    <Content Include="ResultFiles\26-Jan-2014\Results-2.pdf" />
+    <Content Include="ResultFiles\26-Jan-2014\Results-3.pdf" />
     <None Include="Scripts\Lib\jquery-1.8.2.intellisense.js" />
     <Content Include="ResultFiles\26-Jan-2014\Temporary.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
