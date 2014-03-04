@@ -44,7 +44,7 @@ a { background: none repeat scroll 0 0 rgba(0, 0, 0, 0); font-size: 100%; margin
         #main-nav > ul > li { text-align: center; display: table-cell; padding: 0 6px; -moz-box-shadow: 8px 0 0 -7px #767676; -webkit-box-shadow: 8px 0 0 -7px #767676; box-shadow: 8px 0 0 -7px #767676; }
             #main-nav > ul > li.is-last { -moz-box-shadow: 0 0 0 0 #767676; -webkit-box-shadow: 0 0 0 0 #767676; box-shadow: 0 0 0 0 #767676; }
             #main-nav > ul > li > a { color: #fff; }
-            #main-nav > ul > li.is-selected, #main-nav > ul > li:hover { background-color: #3b3b3b; }
+            #main-nav > ul > li.active, #main-nav > ul > li:hover { background-color: #3b3b3b; }
     #main-nav > ul { width: auto; padding-left: 0; }
         #main-nav > ul > li { padding: 0 20px; }
 .text-14 { font-family: "museo-sans",museo,"helvetica neue",helvetica,arial,sans-serif; font-size: 14px; font-weight: 500; }
