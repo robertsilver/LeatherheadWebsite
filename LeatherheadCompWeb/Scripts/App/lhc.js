@@ -3,6 +3,19 @@
     var _lhc = function () {
         var currentPopup = null,
         
+        init = function() {
+            var path = window.location.pathname;
+            path = path.replace(/\/$/, "");
+            path = decodeURIComponent(path);
+
+            $("nav a").each(function () {
+                var href = $(this).attr('href');
+                if ((href.length == 1 && path.length == 0) || (href.length > 1 && path.substring(0, href.length) === href)) {
+                    $(this).closest('li').addClass('active');
+                }
+            });
+        },
+            
         nonModelPopup = function() {
 
             $(".popup-container").hover(function () {
@@ -38,6 +51,7 @@
             });
         };
         return {
+            init: init,
             nonModelPopup: nonModelPopup,
         };
 

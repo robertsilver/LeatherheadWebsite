@@ -129,6 +129,7 @@
     <Compile Include="Controllers\DanceRelatedController.cs" />
     <Compile Include="Controllers\FutureEventsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ReportsController.cs" />
     <Compile Include="Controllers\ResultsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -142,6 +143,7 @@
     <Content Include="Content\CSS\FutureEvents.css" />
     <Content Include="Content\CSS\home.css" />
     <Content Include="Content\CSS\MeetTheTeam.css" />
+    <Content Include="Content\CSS\Reports.css" />
     <Content Include="Content\CSS\Results.css" />
     <Content Include="Content\Images\footer-logo.jpg" />
     <Content Include="Content\Images\georgina.jpg" />
@@ -257,6 +259,7 @@
     <Content Include="Views\Results\Index.cshtml" />
     <Content Include="Views\DanceRelated\Index.cshtml" />
     <Content Include="Views\FutureEvents\Index.cshtml" />
+    <Content Include="Views\Reports\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

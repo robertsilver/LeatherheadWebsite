@@ -22,11 +22,12 @@
         </div>
         <nav class="text-14" id="main-nav">
             <ul>
-                <li class="is-selected"><a href="/">Home</a></li>
-                <li class="">@Html.ActionLink("Results", "Index", "Results")</li>
-                <li class="">@Html.ActionLink("Future Events", "Index", "FutureEvents")</li>
-                <li class="">@Html.ActionLink("Meet The Team", "MeetTheTeam", "Home")</li>
-                <li class="">@Html.ActionLink("Contact Us", "ContactUs", "Home")</li>
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("Results", "Index", "Results")</li>
+                <li class="">@Html.ActionLink("Reports", "Index", "Reports")</li>
+                <li>@Html.ActionLink("Future Events", "Index", "FutureEvents")</li>
+                <li>@Html.ActionLink("Meet The Team", "MeetTheTeam", "Home")</li>
+                <li>@Html.ActionLink("Contact Us", "ContactUs", "Home")</li>
                 <li class="is-last">@Html.ActionLink("Dance Related", "Index", "DanceRelated")</li>
             </ul>
         </nav>
@@ -56,5 +57,10 @@
     </div>
 
     @RenderSection("scripts", required: false)
+    <script type="text/javascript">
+        $(document).ready(function () {
+            lhc.init();
+        });
+    </script>
 </body>
 </html>
