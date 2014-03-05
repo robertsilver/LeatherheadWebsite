@@ -1,12 +1,17 @@
-﻿#reports{ font-size: 16px;line-height: 25px;margin: 20px;}
-#reports a{ text-decoration: underline;}
-#reports h3 { text-decoration: underline;text-transform: capitalize;font-size: 19px;margin: 0 0 10px 0;padding: 0;}
-#reports strong { font-size: 17px;font-weight: bold;color: #fff;}
-#reports section { margin: 0;padding: 0;}
-#reports section h3 { text-decoration: underline;font-size: 17px;padding: 0;font-weight: bold;}
-#reports section h4 {font-size: 17px;margin: 0 0 10px 0;padding: 0;font-weight: bold;}
-#reports section h5 {margin: 0 0 10px 0;padding: 0;font-weight: normal;text-decoration: underline;font-size: 16px;}
-#reports .margin-top-10 { margin-top: 10px;}
-#reports section .no-gap { margin: 0;padding: 0;}
-#reports p strong { font-size: 16px;}
-#reports .announcement { font-size: 19px;font-weight: bold;}
+﻿#reports { font-size: 16px; line-height: 25px; margin: 20px; }
+    #reports a { text-decoration: underline; }
+    #reports h3 { text-decoration: underline; text-transform: capitalize; font-size: 19px; margin: 0 0 10px 0; padding: 0; }
+    #reports strong { font-size: 17px; font-weight: bold; color: #fff; }
+    #reports section { margin: 0; padding: 0; }
+        #reports section h3 { text-decoration: underline; font-size: 17px; padding: 0; font-weight: bold; }
+        #reports section h4 { font-size: 17px; margin: 0 0 10px 0; padding: 0; font-weight: bold; }
+        #reports section h5 { margin: 0 0 10px 0; padding: 0; font-weight: normal; text-decoration: underline; font-size: 16px; }
+    #reports .margin-top-10 { margin-top: 10px; }
+    #reports section .no-gap { margin: 0; padding: 0; }
+    #reports p strong { font-size: 16px; }
+    #reports .announcement { font-size: 19px; font-weight: bold; }
+    #reports .adjudicators .popup-trigger { text-decoration: underline;}
+    #reports .popup-content { padding: 4px; width: 300px; position: absolute; display: none; border: #666666 solid 2px; background-color: #e1e1e1; z-index: 2; }
+    #reports .popup-content strong { color: #000;}
+        #reports .popup-content p { color: #666666; padding: 0; margin: 0; }
+        #reports .popup-content a { color: #333; text-decoration: underline; }
