@@ -10,9 +10,61 @@
     <p>
         <strong>Sponsors:</strong> <a href="http://www.sparkledesignsuk.com" target="_blank">Sparkle Designs</a> represented to-day by both Michael and Beverly supported by two lovely young ladies who were too shy to give me their names.
     </p>
-    <p>
-        <strong>Adjudicators:</strong>  Peggy Callaghan, Colin Mansbridge, Harry Ferris, Vlad Shalnev and Ellis Killey (Chairman).
-    </p>
+    <div class="popup-container">
+        <p class="adjudicators">
+            <strong>Adjudicators:</strong>  Peggy Callaghan, <span id="pop_trigCM" class="popup-trigger">Colin Mansbridge</span>, Harry Ferris,  <span id="pop_trigVS" class="popup-trigger">Vlad Shalnev</span> and  <span id="pop_trigEK" class="popup-trigger">Ellis Killey</span> (Chairman).
+        </p>
+        <!-- Note: these popup-content classes must stay within the popup-container class.
+            Otherwise users cannot click on the items in the popup due to the javascript rules in the lhc.js file. -->
+        <div id="pop_contCM" class="popup-content">
+            <p>
+                <strong>Address:</strong> 2 Peters Close, Locks Heath, Southampton SO31 6ED
+            </p>
+            <p>
+                <strong>Tel:</strong> <a href="tel:01489574367" target="_blank">01489-574367</a>
+            </p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:mansbridgecolin@gmail.com" target="_blank">mansbridgecolin@gmail.com</a>
+            </p>
+            <p>
+                Coaching & Championship Adjudicator for modern & latin.
+            </p>
+        </div>
+        <div id="pop_contVS" class="popup-content">
+            <p>
+                <strong>Address:</strong> Dance Art, 8 Benett Gardens, Norbury, SW16 4QE
+            </p>
+            <p>
+                <strong>Tel:</strong> <a href="tel:0207659891" target="_blank">020-765-9891</a>
+            </p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:info@danceartlondon.com" target="_blank">info@danceartlondon.com</a>
+            </p>
+            <p>
+                <strong>Web:</strong> <a href="http://www.danceartlondon.com" target="_blank">www.danceartlondon.com</a>
+            </p>
+            <p>
+                Former Professional Champions.  Available for coaching, lectures, demonstrations, Championship adjudicating, modern & latin.
+            </p>
+        </div>
+        <div id="pop_contEK" class="popup-content">
+            <p>
+                Fellow & Examiner ADA
+            </p>
+            <p>
+                <strong>Address:</strong> 22 Ballachurry Close, Onchan, Isle of Man IM3 4BE
+            </p>
+            <p>
+                <strong>Tel:</strong> <a href="tel:01624623414" target="_blank">01624-623414</a>
+            </p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:elliskilley@hotmail.com" target="_blank">elliskilley@hotmail.com</a>
+            </p>
+            <p>
+                Championship adjudicators for modern, latin & old time and BDC scrutineers.  Organisers of The Isle of Man Festival
+            </p>
+        </div>
+    </div>
 
     <h3>results</h3>
 
@@ -245,3 +297,9 @@
         <p><strong>3rd Damian & Louise Devoy</strong>.   See above. </p>
     </section>
 </article>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        lhc.nonModelPopup();
+    });
+</script>
