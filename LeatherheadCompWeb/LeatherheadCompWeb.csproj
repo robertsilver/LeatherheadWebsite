@@ -145,6 +145,7 @@
     <Content Include="Content\CSS\MeetTheTeam.css" />
     <Content Include="Content\CSS\Reports.css" />
     <Content Include="Content\CSS\Results.css" />
+    <Content Include="Content\Images\AwaitingImage.jpg" />
     <Content Include="Content\Images\footer-logo.jpg" />
     <Content Include="Content\Images\georgina.jpg" />
     <Content Include="Content\Images\Introduction.jpg" />
