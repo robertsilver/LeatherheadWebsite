@@ -1,0 +1,1 @@
+﻿This folder is here to store the biographies of the judges, as I don't want to litter the view with commented out code.

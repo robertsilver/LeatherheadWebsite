@@ -137,6 +137,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Bios\Bios.txt" />
+    <Content Include="Bios\ReadMe.txt" />
     <Content Include="Content\CSS\announcements.css" />
     <Content Include="Content\CSS\ContactUs.css" />
     <Content Include="Content\CSS\DanceRelated.css" />
