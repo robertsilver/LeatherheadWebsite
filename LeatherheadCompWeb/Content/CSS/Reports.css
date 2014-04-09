@@ -10,6 +10,7 @@
     #reports section .no-gap { margin: 0; padding: 0; }
     #reports p strong { font-size: 16px; }
     #reports .announcement { font-size: 19px; font-weight: bold; }
+    #reports .adjudicators { text-align: left;}
     #reports .adjudicators .popup-trigger { text-decoration: underline;}
     #reports .popup-content { padding: 4px; width: 300px; position: absolute; display: none; border: #666666 solid 2px; background-color: #e1e1e1; z-index: 2; }
     #reports .popup-content strong { color: #000;}
