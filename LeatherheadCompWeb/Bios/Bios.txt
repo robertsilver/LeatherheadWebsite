@@ -81,3 +81,40 @@
             <strong>Tel:</strong> <a href="tel:07504133819" target="_blank">07504 133819</a>
         </p>
     </div>
+	<div id="pop_contTM" class="popup-content">
+        <p>
+            Former: South of England, South East England, Middlesex, Essex Open and Warwickshire Open, Amateur Ballroom Chamption.  Grand Finalist: International, British National, Star UK Championships.
+        </p>
+        <p>
+            <strong>Address:</strong> 8 Brighton Road, Banstead, SM7 1BS
+        </p>
+        <p>
+            <strong>Tel:</strong> <a href="tel:01737358883" target="_blank">01737-358883</a>
+        </p>
+        <p>
+            <strong>Mobile:</strong> <a href="tel:07815448057" target="_blank">07815-448057</a>
+        </p>
+        <p>
+            <strong>Email:</strong> <a href="mailto:tpalmer48@googlemail.com" target="_blank">tpalmer48@googlemail.com</a>
+        </p>
+        <p>
+            Coaching, Championship adjudicator for modern & latin.  BDC Scrutineer
+        </p>
+    </div>
+    <div id="pop_contVRN" class="popup-content">
+        <p>
+            <strong>Address:</strong> 20 Ayebridges Avenue, Thorpe, Egham, Surrey TW20 8HR
+        </p>
+        <p>
+            <strong>Tel:</strong> <a href="tel:01784458959" target="_blank">01784-458959</a>
+        </p>
+        <p>
+            <strong>Mobile:</strong> <a href="tel:07939051216" target="_blank">07939-051216</a>
+        </p>
+        <p>
+            <strong>Email:</strong> <a href="mailto:veedance@hotmail.com" target="_blank">veedance@hotmail.com</a>
+        </p>
+        <p>
+            Championship adjudicator, coaching, lectures and professional training.
+        </p>
+    </div>
