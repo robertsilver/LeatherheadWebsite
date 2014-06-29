@@ -251,6 +251,7 @@
     <Content Include="Scripts\Lib\modernizr-2.6.2.js" />
     <Content Include="Scripts\Lib\_references.js" />
     <Content Include="Views\Reports\14-Jan-2014 Report.txt" />
+    <Content Include="Views\Reports\23-Mar-2014 Report.txt" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -274,7 +275,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
