@@ -220,6 +220,8 @@
     <Content Include="Content\CSS\Site.css" />
     <None Include="Properties\PublishProfiles\LHC.pubxml" />
     <None Include="Properties\PublishProfiles\LocalMachine.pubxml" />
+    <Content Include="Programmes\Aug-2014 programme.txt" />
+    <Content Include="Programmes\ReadMe.txt" />
     <Content Include="ResultFiles\26-Jan-2014\Results-1.pdf" />
     <Content Include="ResultFiles\26-Jan-2014\Results-2.pdf" />
     <Content Include="ResultFiles\26-Jan-2014\Results-3.pdf" />
