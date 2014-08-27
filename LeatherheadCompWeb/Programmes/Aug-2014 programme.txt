@@ -1,0 +1,256 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+
+<div class="competition-name">
+    David Osborne Tribute Day,<br />
+    plus the Janet Mansbridge Stylish & Gracious Lady<br />
+    & the Dutch/English Team Match
+</div>
+<div class="national-league-event">
+    A DPA/BDF National League Event
+</div>
+<div class="competition-date">
+    Sunday 14th September 2014
+</div>
+<div class="venue">
+    Tylney Ballroom, Leatherhead Leisure Centre, Guildford Road, Leatherhead, Surrey, KT22 9BL<br />
+    (M25 Junction 9, 1 ½ miles to Centre). Large Free Car Park.
+</div>
+
+<div class="sponsor">
+    Sponsored by <a href="http://www.sparkledesignsuk.com" target="_blank">Sparkle Designs</a>
+</div>
+<div class="doors-open">
+    Doors open 10.15am - 7.00pm
+</div>
+<div class="popup-container">
+    <div class="adjudicators">
+        Adjudicators: <span id="pop_trigVRN" class="popup-trigger">Vera Randall-Noyce</span>, Jan Sepp, Harry Ferris, <span id="pop_trigJL" class="popup-trigger">Jamie Letissier</span> and Colin Mansbridge.
+    </div>
+    <!-- Note: these popup-content classes must stay within the popup-container class.
+        Otherwise users cannot click on the items in the popup due to the javascript rules in the lhc.js file. -->
+      <div id="pop_contVRN" class="popup-content">
+        <p>
+            <strong>Address:</strong> 20 Ayebridges Avenue, Thorpe, Egham, Surrey TW20 8HR
+        </p>
+        <p>
+            <strong>Tel:</strong> <a href="tel:01784458959" target="_blank">01784-458959</a>
+        </p>
+        <p>
+            <strong>Mobile:</strong> <a href="tel:07939051216" target="_blank">07939-051216</a>
+        </p>
+        <p>
+            <strong>Email:</strong> <a href="mailto:veedance@hotmail.com" target="_blank">veedance@hotmail.com</a>
+        </p>
+        <p>
+            Championship adjudicator, coaching, lectures and professional training.
+        </p>
+    </div>
+    <div id="pop_contJL" class="popup-content">
+        <p>
+            Coaching, demonstrations, event organiser, adjudicator (ballroom, latin & Argentine tango)
+        </p>
+        <p>
+            <strong>Address:</strong> Penrith, Carteret Road, Cobo, Castel, Guernsey, GY5 7YU
+        </p>
+        <p>
+            <strong>Web:</strong> <a href="http://www.letsdance-guernsey.co.uk" target="_blank">www.letsdance-guernsey.co.uk</a>
+        </p>
+        <p>
+            <strong>Email:</strong> <a href="mailto:jamie.letissier@cwgsy.net" target="_blank">jamie.letissier@cwgsy.net</a>
+        </p>
+        <p>
+            <strong>Tel:</strong> <a href="tel:07781115568" target="_blank">07781 115568</a>
+        </p>
+    </div>
+</div>
+<table class="programme">
+
+    <tr>
+        <td colspan="4" class="section">Juvenile Section - From 10.45am
+        </td>
+    </tr>
+    <tr>
+        <td class="pull-left">Open Juvenile Beginners</td>
+        <td class="pull-right">W</td>
+        <td class="pull-left">Open Juvenile Beginners</td>
+        <td class="pull-right">C</td>
+    </tr>
+    <tr>
+        <td class="pull-left">Open Juvenile Novice</td>
+        <td class="pull-right">W.Q</td>
+        <td class="pull-left">Open Juvenile Novice</td>
+        <td class="pull-right">C.J</td>
+    </tr>
+    <tr>
+        <td class="pull-left">Open Juvenile 2 dance</td>
+        <td class="pull-right">T.Q</td>
+        <td class="pull-left">Open Juvenile 2 dance</td>
+        <td class="pull-right">R.J</td>
+    </tr>
+    <tr>
+        <td class="pull-left">Open Juvenile 2 dance</td>
+        <td class="pull-right">W.T</td>
+        <td class="pull-left">Open Juvenile 2 dance</td>
+        <td class="pull-right">C.S</td>
+    </tr>
+    <tr>
+        <td class="pull-left">Open Juvenile All Girls</td>
+        <td class="pull-right">W.T.Q</td>
+        <td class="pull-left">Juvenile All Girls</td>
+        <td class="pull-right">C.R.J</td>
+    </tr>
+    <tr>
+        <td class="pull-left">Open Juvenile 4 dance</td>
+        <td class="pull-right">W.T.F.Q</td>
+        <td class="pull-left">Open Juvenile 4 dance</td>
+        <td class="pull-right">C.S.R.J</td>
+    </tr>
+    <tr>
+        <td colspan="4" class="section">Junior Section
+        </td>
+    </tr>
+    <tr>
+        <td class="pull-left">Open Junior Beginners</td>
+        <td class="pull-right">Q</td>
+        <td class="pull-left">Open Junior Beginners</td>
+        <td class="pull-right">J</td>
+    </tr>
+    <tr>
+        <td class="pull-left">Open Junior Novice</td>
+        <td class="pull-right">W.Q</td>
+        <td class="pull-left">Open Junior Novice</td>
+        <td class="pull-right">C.J</td>
+    </tr>
+    <tr>
+        <td class="pull-left">Open Junior 2 Dance</td>
+        <td class="pull-right">T.Q</td>
+        <td class="pull-left">Open Junior 2 Dance</td>
+        <td class="pull-right">C.R</td>
+    </tr>
+    <tr>
+        <td class="pull-left">Open Junior 2 Dance</td>
+        <td class="pull-right">W.F</td>
+        <td class="pull-left">Open Junior 2 dance</td>
+        <td class="pull-right">S.J</td>
+    </tr>
+    <tr>
+        <td class="pull-left">Open Junior All Girls</td>
+        <td class="pull-right">W.T.Q</td>
+        <td class="pull-left">Open Junior All Girls</td>
+        <td class="pull-right">C.R.J</td>
+    </tr>
+    <tr>
+        <td class="pull-left">Open Junior 5 dance</td>
+        <td class="pull-right">W.T.F.Q.VW</td>
+        <td class="pull-left">Open Junior 5 dance</td>
+        <td class="pull-right">C.S.R.P.J</td>
+    </tr>
+    <tr>
+        <td colspan="4" class="section">Adult Phase 1 (Latin) - From midday
+        </td>
+    </tr>
+    <tr>
+        <td class="pull-left">Beginners</td>
+        <td class="pull-right">C.J</td>
+        <td class="pull-left">Novice</td>
+        <td class="pull-right">C.J</td>
+    </tr>
+    <tr>
+        <td class="pull-left">Intermediate</td>
+        <td class="pull-right">C.S.R.J</td>
+        <td class="pull-left">Open Pre-Champ</td>
+        <td class="pull-right">C.S.R.J</td>
+    </tr>
+    <tr>
+        <td class="pull-left">Senior Pre-Champ</td>
+        <td class="pull-right">C.S.R.J</td>
+        <td class="pull-left">Senior 2</td>
+        <td class="pull-right">C.S.R.P.J</td>
+    </tr>
+    <tr>
+        <td class="pull-left">Open Senior</td>
+        <td class="pull-right">C.S.R.P.J</td>
+        <td class="pull-left">Open Amateur</td>
+        <td class="pull-right">C.S.R.P.J</td>
+    </tr>
+    <tr>
+        <td class="pull-left">Open</td>
+        <td class="pull-right">Jive</td>
+        <td class="pull-left">Open</td>
+        <td class="pull-right">Rumba</td>
+    </tr>
+    <tr>
+        <td colspan="4" class="section">Adult Phase 2 (Ballroom) - From 1.30pm
+        </td>
+    </tr>
+    <tr>
+        <td class="pull-left">Intermediate</td>
+        <td class="pull-right">W.T.F.Q</td>
+        <td class="pull-left">Over 50s Senior Pre-Champ</td>
+        <td class="pull-right">W.T.F.Q</td>
+    </tr>
+    <tr>
+        <td class="pull-left">Open 35s</td>
+        <td class="pull-right">Waltz</td>
+        <td class="pull-left">Senior 3</td>
+        <td class="pull-right">W.T.F.Q</td>
+    </tr>
+    <tr>
+        <td class="pull-left">Beginners</td>
+        <td class="pull-right">W.Q</td>
+        <td class="pull-left">&nbsp;</td>
+        <td class="pull-right">&nbsp;</td>
+    </tr>
+    <tr>
+        <td colspan="4" class="section">Adult Phase 3 - From 2.30pm
+        </td>
+    </tr>
+    <tr>
+        <td class="pull-left">Senior Intermediate</td>
+        <td class="pull-right">W.T.F.Q</td>
+        <td class="pull-left">Open Pre-Champ</td>
+        <td class="pull-right">W.T.F.Q</td>
+    </tr>
+    <tr>
+        <td class="pull-left">Senior Pre-Champ</td>
+        <td class="pull-right">W.T.F.Q</td>
+        <td class="pull-left">Over 35s</td>
+        <td class="pull-right">Foxtrot</td>
+    </tr>
+    <tr>
+        <td class="pull-left">Senior 2 DPA</td>
+        <td class="pull-right">W.T.F.Q</td>
+        <td class="pull-left">Open</td>
+        <td class="pull-right">Quickstep</td>
+    </tr>
+    <tr>
+        <td colspan="4" class="section">Adult Phase 4 - From 3.30pm
+        </td>
+    </tr>
+    <tr>
+        <td class="pull-left">Novice</td>
+        <td class="pull-right">W.Q</td>
+        <td class="pull-left">Over 35s</td>
+        <td class="pull-right">Tango</td>
+    </tr>
+    <tr>
+        <td class="pull-left">Open</td>
+        <td class="pull-right">Vienesse Waltz</td>
+        <td class="pull-left">Open Senior</td>
+        <td class="pull-right">W.T.F.Q (VW)</td>
+    </tr>
+    <tr>
+        <td class="pull-left">Open Amateur</td>
+        <td class="pull-right">W.T.F.Q (VW)</td>
+        <td class="pull-left">&nbsp;</td>
+        <td class="pull-right">&nbsp;</td>
+    </tr>
+</table>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        lhc.nonModelPopup();
+    });
+</script>
