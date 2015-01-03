@@ -1,3 +1,19 @@
-﻿.future-events { margin: 20px 0 0 20px;font-size: 16px;}
-.future-events h2 { margin: 0;padding: 0;font-weight: bold;font-size: 28px;}
-.future-events .events-table  { margin-top: 20px;}
+﻿.future-events {
+    margin: 20px 0 0 20px;
+    font-size: 16px;
+}
+
+    .future-events h2 {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .future-events .events-table {
+        margin-top: 20px;
+    }
+
+        .future-events .events-table strong {
+            color: #ffffff;
+        }
