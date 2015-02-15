@@ -1,17 +1,106 @@
 ﻿/*#site-content strong { color: #333;}*/
-#site-content .competition-name { font-weight: bold; text-align: center; font-size: 24px; }
-#site-content .national-league-event { text-align: center; font-size: 16px; margin-top: 5px; }
-#site-content .competition-date { font-weight: bold; text-align: center; font-size: 22px; margin-top: 5px; }
-#site-content .venue {  text-align: center; font-size: 14px; margin-top: 5px; }
-#site-content .sponsor { font-weight: bold; text-align: center; font-size: 14px; margin-top: 5px; }
-    #site-content .sponsor a { text-decoration: underline; }
-#site-content .doors-open { font-weight: bold; text-align: center; font-size: 14px; margin-top: 5px; }
-#site-content .adjudicators { font-weight: bold; text-align: center; font-size: 14px; margin-top: 5px; }
-#site-content .adjudicators .popup-trigger { text-decoration: underline;}
-#site-content .programme { border: 1px solid #ffffff; text-align: center; margin: 0 auto; margin-top: 10px;}
-#site-content .programme .section { font-weight: bold;}
-#site-content .programme .pull-left { text-align: left;}
-#site-content .programme .pull-right { text-align: right;}
-    #site-content  .popup-content { padding: 4px; width: 300px; position: absolute; display: none; border: #666666 solid 2px; background-color: #e1e1e1; z-index: 2; }
-        #site-content  .popup-content p { color: #666666; padding: 0; margin: 0; }
-        #site-content  .popup-content a { color: #333;text-decoration: underline; }
+#site-content .competition-name {
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+}
+
+#site-content .national-league-event {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+#site-content .competition-date {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+#site-content .other-information {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+#site-content .venue {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#site-content .sponsor {
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+    #site-content .sponsor a {
+        text-decoration: underline;
+    }
+
+#site-content .doors-open {
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+#site-content .adjudicators {
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+    #site-content .adjudicators .popup-trigger {
+        text-decoration: underline;
+    }
+
+#site-content .programme {
+    border: 1px solid #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+    #site-content .programme .section {
+        font-weight: bold;
+    }
+
+    #site-content .programme .pull-left {
+        text-align: left;
+    }
+
+    #site-content .programme .pull-right {
+        text-align: right;
+    }
+
+    #site-content .national-league {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+#site-content .popup-content {
+    padding: 4px;
+    width: 300px;
+    position: absolute;
+    display: none;
+    border: #666666 solid 2px;
+    background-color: #e1e1e1;
+    z-index: 2;
+}
+
+    #site-content .popup-content p {
+        color: #666666;
+        padding: 0;
+        margin: 0;
+    }
+
+    #site-content .popup-content a {
+        color: #333;
+        text-decoration: underline;
+    }
