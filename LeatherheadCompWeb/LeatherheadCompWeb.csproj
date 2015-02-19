@@ -219,6 +219,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\CSS\Site.css" />
+    <Content Include="Content\Assets\EntryForms.doc" />
     <None Include="Properties\PublishProfiles\LHC.pubxml" />
     <None Include="Properties\PublishProfiles\LocalMachine.pubxml" />
     <Content Include="Programmes\Aug-2014 programme.txt" />
@@ -244,6 +245,10 @@
     <Content Include="ResultFiles\Horsham\01-Feb-2015\Junior Ballroom and Latin.pdf" />
     <Content Include="ResultFiles\Horsham\01-Feb-2015\Senior Ballroom.pdf" />
     <Content Include="ResultFiles\Horsham\01-Feb-2015\Senior Latin.pdf" />
+    <Content Include="ResultFiles\Leatherhead\15-Feb-2015\Competitors List.pdf" />
+    <Content Include="ResultFiles\Leatherhead\15-Feb-2015\Results1.pdf" />
+    <Content Include="ResultFiles\Leatherhead\15-Feb-2015\Results2.pdf" />
+    <Content Include="ResultFiles\Leatherhead\15-Feb-2015\Results3.pdf" />
     <None Include="Scripts\Lib\jquery-1.8.2.intellisense.js" />
     <Content Include="ResultFiles\Leatherhead\26-Jan-2014\Temporary.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
