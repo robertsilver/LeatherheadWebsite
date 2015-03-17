@@ -31,11 +31,19 @@
     margin-top: 5px;
 }
 
+#site-content .future-stars {
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 15px;
+}
+
+
 #site-content .sponsor {
     font-weight: bold;
     text-align: center;
-    font-size: 14px;
-    margin-top: 5px;
+    font-size: 22px;
+    margin-top: 15px;
 }
 
     #site-content .sponsor a {
