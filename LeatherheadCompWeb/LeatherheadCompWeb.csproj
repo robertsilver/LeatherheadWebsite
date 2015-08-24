@@ -20,6 +20,13 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -258,6 +265,9 @@
     <Content Include="ResultFiles\Leatherhead\14-Jun-2015\Results2.pdf" />
     <Content Include="ResultFiles\Leatherhead\14-Jun-2015\CompetitorsList.pdf" />
     <Content Include="ResultFiles\Leatherhead\14-Jun-2015\Results1.pdf" />
+    <Content Include="ResultFiles\Leatherhead\16-Aug-2015\CompetitorList.pdf" />
+    <Content Include="ResultFiles\Leatherhead\16-Aug-2015\Results1.pdf" />
+    <Content Include="ResultFiles\Leatherhead\16-Aug-2015\Results2.pdf" />
     <None Include="Scripts\Lib\jquery-1.8.2.intellisense.js" />
     <Content Include="ResultFiles\Leatherhead\26-Jan-2014\Temporary.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
