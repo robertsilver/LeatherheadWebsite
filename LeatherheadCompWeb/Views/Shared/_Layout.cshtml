@@ -39,7 +39,7 @@
                 <li>@Html.ActionLink("Results", "Index", "Results")</li>
                 @*<li>@Html.ActionLink("Reports", "Index", "Reports")</li>*@
                 <li>@Html.ActionLink("Future Events", "Index", "FutureEvents")</li>
-                <li>@Html.ActionLink("Horsham Results", "Index", "Horsham")</li>
+                @*<li>@Html.ActionLink("Horsham Results", "Index", "Horsham")</li>*@
                 <li>@Html.ActionLink("Meet The Team", "MeetTheTeam", "Home")</li>
                 <li>@Html.ActionLink("Contact Us", "ContactUs", "Home")</li>
                 <li class="is-last">@Html.ActionLink("Dance Related", "Index", "DanceRelated")</li>
@@ -50,6 +50,12 @@
                 @RenderBody()
             </div>
             <div class="announcements">
+                <p class="special-announcement">
+                    On the 13th March we will be having a raffle in aid of Help for Heroes.  We have been given several prizes including Champagne
+                    and we would like to thank <a href="http://www.supadance.com" target="_blank">Supadance</a>, who have supplied a shoe voucher.
+                </p>
+                
+                <hr />
                 <p class="sponsor">
                     Competitions sponsored by<br />
                     <a href="http://www.sparkledesignsuk.com" target="_blank">
@@ -58,10 +64,11 @@
                 </p>
                 <hr />
                 <p>
-                    The entrance fee is only £11.00 for Juveniles/Juniors.  Adult competitors £14.00 and all spectators, £8.00.
+                    The entrance fee is only £11.50 for Juveniles/Juniors.  Adult competitors £15.00 and all spectators, £8.50.
                 </p>
                 <hr />
-                <p class="entry-forms">To save time when at the comp, why not
+                <p class="entry-forms">
+                    To save time when at the comp, why not
                     <a href="~/Content/Assets/EntryForms.doc" target="_blank">download an entry form</a>
                 </p>
             </div>
