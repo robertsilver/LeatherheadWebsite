@@ -92,6 +92,11 @@
         font-size: 16px;
     }
 
+    #site-content .super-league {
+        color: #fff;
+        font-weight: bold;
+    }
+
 #site-content .popup-content {
     padding: 4px;
     width: 300px;
