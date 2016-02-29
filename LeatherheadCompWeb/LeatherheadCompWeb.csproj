@@ -275,7 +275,11 @@
     <Content Include="ResultFiles\Leatherhead\15-Nov-2015\CompetitorList.pdf" />
     <Content Include="ResultFiles\Leatherhead\15-Nov-2015\Results1.pdf" />
     <Content Include="ResultFiles\Leatherhead\15-Nov-2015\Results2.pdf" />
-    <Content Include="ResultFiles\Leatherhead\14-Feb-2016\Competitors.pdf" />
+    <Content Include="ResultFiles\Leatherhead\14-Feb-2016\Results2.pdf" />
+    <Content Include="ResultFiles\Leatherhead\14-Feb-2016\Results3.pdf" />
+    <Content Include="ResultFiles\Leatherhead\14-Feb-2016\Resutls4.pdf" />
+    <Content Include="ResultFiles\Leatherhead\14-Feb-2016\Results1.pdf" />
+    <Content Include="ResultFiles\Leatherhead\14-Feb-2016\Competitors.xls" />
     <None Include="Scripts\Lib\jquery-1.8.2.intellisense.js" />
     <Content Include="ResultFiles\Leatherhead\26-Jan-2014\Temporary.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -296,6 +300,7 @@
     <Content Include="Scripts\Lib\knockout-2.2.0.js" />
     <Content Include="Scripts\Lib\modernizr-2.6.2.js" />
     <Content Include="Scripts\Lib\_references.js" />
+    <Content Include="Views\Reports\14-Aug-2014 Report.txt" />
     <Content Include="Views\Reports\14-Jan-2014 Report.txt" />
     <Content Include="Views\Reports\23-Mar-2014 Report.txt" />
     <Content Include="Web.config">
