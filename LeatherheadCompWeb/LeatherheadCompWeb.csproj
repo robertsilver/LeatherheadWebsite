@@ -227,7 +227,8 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Content\CSS\Site.css" />
-    <Content Include="Content\Assets\EntryForms.doc" />
+    <Content Include="Content\Assets\Child entry form.doc" />
+    <Content Include="Content\Assets\Adult entry form.doc" />
     <None Include="Properties\PublishProfiles\LHC.pubxml" />
     <None Include="Properties\PublishProfiles\LocalMachine.pubxml" />
     <Content Include="Programmes\Aug-2014 programme.txt" />
