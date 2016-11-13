@@ -233,6 +233,7 @@
     <None Include="Properties\PublishProfiles\LocalMachine.pubxml" />
     <Content Include="Programmes\Aug-2014 programme.txt" />
     <Content Include="Programmes\ReadMe.txt" />
+    <Content Include="ResultFiles\Leatherhead\13-Nov-2016\TempFile.txt" />
     <Content Include="ResultFiles\Leatherhead\14-Feb-2016\Competitors.xls" />
     <Content Include="ResultFiles\Leatherhead\26-Jan-2014\Results-1.pdf" />
     <Content Include="ResultFiles\Leatherhead\26-Jan-2014\Results-2.pdf" />
