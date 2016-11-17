@@ -233,7 +233,6 @@
     <None Include="Properties\PublishProfiles\LocalMachine.pubxml" />
     <Content Include="Programmes\Aug-2014 programme.txt" />
     <Content Include="Programmes\ReadMe.txt" />
-    <Content Include="ResultFiles\Leatherhead\13-Nov-2016\TempFile.txt" />
     <Content Include="ResultFiles\Leatherhead\14-Feb-2016\Competitors.xls" />
     <Content Include="ResultFiles\Leatherhead\26-Jan-2014\Results-1.pdf" />
     <Content Include="ResultFiles\Leatherhead\26-Jan-2014\Results-2.pdf" />
@@ -296,6 +295,10 @@
     <Content Include="ResultFiles\Leatherhead\02-Oct-2016\Result1.pdf" />
     <Content Include="ResultFiles\Leatherhead\02-Oct-2016\Result2.pdf" />
     <Content Include="ResultFiles\Leatherhead\02-Oct-2016\Result3.pdf" />
+    <Content Include="ResultFiles\Leatherhead\13-Nov-2016\CompetitorList.pdf" />
+    <Content Include="ResultFiles\Leatherhead\13-Nov-2016\Result1.pdf" />
+    <Content Include="ResultFiles\Leatherhead\13-Nov-2016\Result2.pdf" />
+    <Content Include="ResultFiles\Leatherhead\13-Nov-2016\Result3.pdf" />
     <None Include="Scripts\Lib\jquery-1.8.2.intellisense.js" />
     <Content Include="ResultFiles\Leatherhead\26-Jan-2014\Temporary.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
