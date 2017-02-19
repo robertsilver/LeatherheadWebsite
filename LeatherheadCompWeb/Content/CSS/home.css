@@ -73,6 +73,7 @@
     text-align: center;
     margin: 0 auto;
     margin-top: 10px;
+    font-size: 1.25em;
 }
 
     #site-content .programme .section {
@@ -87,13 +88,13 @@
         text-align: right;
     }
 
-    #site-content .national-league {
+    #site-content .programme .national-league {
+        color: #fff;
         font-weight: bold;
-        font-size: 16px;
     }
 
-    #site-content .super-league {
-        color: #fff;
+     #site-content .programme .super-league {
+        color: red;
         font-weight: bold;
     }
 
