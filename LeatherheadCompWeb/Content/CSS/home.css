@@ -60,7 +60,7 @@
 #site-content .adjudicators {
     font-weight: bold;
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     margin-top: 5px;
 }
 
@@ -74,6 +74,10 @@
     margin: 0 auto;
     margin-top: 10px;
     font-size: 1.25em;
+}
+
+#site-content .programme tr:hover {
+    background-color: red;
 }
 
     #site-content .programme .section {
