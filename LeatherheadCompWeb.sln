@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeatherheadCompWeb", "LeatherheadCompWeb\LeatherheadCompWeb.csproj", "{AFD95C5E-D14C-40F8-879C-273ABDEC4094}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leatherhead.Business", "Leatherhead.Business\Leatherhead.Business.csproj", "{A5FB2B6C-5474-4C42-8332-2D318766EC9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leatherhead.DataAccess", "Leatherhead.DataAccess\Leatherhead.DataAccess.csproj", "{582CEEEA-5529-4DA1-AB1E-FE0774A26B9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{AFD95C5E-D14C-40F8-879C-273ABDEC4094}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFD95C5E-D14C-40F8-879C-273ABDEC4094}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFD95C5E-D14C-40F8-879C-273ABDEC4094}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5FB2B6C-5474-4C42-8332-2D318766EC9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5FB2B6C-5474-4C42-8332-2D318766EC9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5FB2B6C-5474-4C42-8332-2D318766EC9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5FB2B6C-5474-4C42-8332-2D318766EC9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{582CEEEA-5529-4DA1-AB1E-FE0774A26B9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{582CEEEA-5529-4DA1-AB1E-FE0774A26B9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{582CEEEA-5529-4DA1-AB1E-FE0774A26B9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{582CEEEA-5529-4DA1-AB1E-FE0774A26B9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

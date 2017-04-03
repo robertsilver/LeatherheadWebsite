@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using LeatherheadCompWeb.Models;
 
 namespace LeatherheadCompWeb.Controllers
 {
@@ -6,7 +7,10 @@ namespace LeatherheadCompWeb.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            var url = Helper.AppSetting("JSON.Results");
+            var results = Leatherhead.Business.Results.GetAll(url);
+
+            return View(results);
         }
     }
 }

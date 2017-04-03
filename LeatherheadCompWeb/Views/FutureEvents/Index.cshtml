@@ -1,36 +1,26 @@
+@model List<Leatherhead.Business.CompDatesPoco>
 @{
     ViewBag.Title = "Future Events";
 }
 
 <div class="future-events">
     <h2>Future Events</h2>
-    <table class="events-table">
-        <tr>
-            <td>
-                <strong>2nd April 2017</strong><br />
-                Cairncross/Follett Awards Day
-            </td>
- <td>
-                <strong>16th July 2017</strong><br />
-                Edward Noyce Tribute Day
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>20th August 2017</strong><br />
-                Jim Langton Tribute Day
-            </td>
-<td>
-                <strong>1st October 2017</strong><br />
-                David Osborn Tribute Day
-            </td>
-        </tr>
-        <tr>
-            
-            <td>
-                <strong>12th November 2017</strong><br />
-                Sparkle Designs Awards Day
-            </td>
-        </tr>
-    </table>
+    @if (!Model.Any())
+    {
+        <div>There are currently no competitions planned.</div>
+    }
+    else
+    {
+        <table class="events-table">
+            @foreach (var m in Model)
+            {
+                <tr>
+                    <td>
+                        <strong>@m.CompetitionDateFormatted</strong><br />
+                        @m.CompetitionName
+                    </td>
+                </tr>
+            }
+        </table>
+    }
 </div>
