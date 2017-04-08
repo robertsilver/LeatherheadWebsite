@@ -35,7 +35,7 @@ ul { list-style: none outside none; }
 a { color: #FFFFFF; cursor: pointer; outline: 0 none; }
 a { background: none repeat scroll 0 0 rgba(0, 0, 0, 0); font-size: 100%; margin: 0; padding: 0; text-decoration: none; vertical-align: baseline; }
 
-#site-wrapper { margin: 0 auto; width: 1020px;font-family: 'Merriweather', serif; }
+#site-wrapper { margin: 0 auto; width: 1200px;font-family: 'Merriweather', serif; }
 #site-header { border-bottom: 0 none; height: 130px; position: relative; }
     #site-header .site-logo { background: url("/Content/Images/site-logo.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0); height: 77px; left: 0; position: absolute; top: 42px; width: 347px; }
 
@@ -49,7 +49,7 @@ a { background: none repeat scroll 0 0 rgba(0, 0, 0, 0); font-size: 100%; margin
         #main-nav > ul > li { padding: 0 20px; }
 .text-14 { font-family: "museo-sans",museo,helvetica,arial,sans-serif; font-size: 14px; font-weight: 500; }
 
-#site-content { background-color: #5c5c5c; margin-top: 14px; padding-bottom: 0; width: 1020px; }
+#site-content { background-color: #5c5c5c; margin-top: 14px; padding-bottom: 0; width: 1200px; }
     #site-content .main { float: left; width: 73%; overflow: hidden; display: table-cell; border-right: 1px solid #fff; padding: 0 5px 20px 10px; }
 
 #site-footer { background-color: #484848; height: 80px; margin: 0; position: relative; color: #fff; }
