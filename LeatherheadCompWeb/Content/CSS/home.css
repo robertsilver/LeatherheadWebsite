@@ -77,7 +77,8 @@
 }
 
 #site-content .programme tr:hover {
-    background-color: red;
+    background-color: #FE6A61;
+    color: #fff;
 }
 
     #site-content .programme .section {
@@ -98,10 +99,11 @@
     }
 
      #site-content .programme .super-league {
-        color: red;
+        color: #FE6A61;
         font-weight: bold;
     }
-
+     
+   
 #site-content .popup-content {
     padding: 4px;
     width: 300px;
