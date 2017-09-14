@@ -20,28 +20,67 @@
                 if (!string.IsNullOrEmpty(m.CompetitorList))
                 {
                     <tr>
-                        <td style="width: 95%;" class="pull-left">
+                        <td style="width: 80%;" class="pull-left">
                             Competitors' List
                         </td>
                         <td class="pull-right"><a href="@m.CompetitorList" target="_blank">List</a></td>
                     </tr>
                     <tr>
-                        <td style="width: 95%;" class="pull-left">
+                        <td style="width: 80%;" class="pull-left">
                             Junior & Juvenille
                         </td>
-                        <td class="pull-right"><a href="@m.JuniorJuvenilleList" target="_blank">Results</a></td>
+                        <td class="pull-right">
+                            @if (m.JuniorJuvenilleList.Count >= 2)
+                            {
+                                for (var count = 0; count < m.JuniorJuvenilleList.Count; count++)
+                                {
+                                    var tally = count + 1;
+                                    <a href="@m.JuniorJuvenilleList[count]" target="_blank">Results - @tally  of @m.JuniorJuvenilleList.Count</a>
+                                }
+                            }
+                            else
+                            {
+                                <a href="@m.JuniorJuvenilleList[0]" target="_blank">Results</a>
+                            }
+                        </td>                       
                     </tr>
                     <tr>
-                        <td style="width: 95%;" class="pull-left">
+                        <td style="width: 80%;" class="pull-left">
                             Adult Latin
                         </td>
-                        <td class="pull-right"><a href="@m.AdultLatin" target="_blank">Results</a></td>
+                        <td class="pull-right">
+                            @if (m.AdultLatin.Count >= 2)
+                            {
+                                for (var count = 0; count < m.AdultLatin.Count; count++)
+                                {
+                                    var tally = count + 1;
+                                    <a href="@m.AdultLatin[count]" target="_blank">Results - @tally  of @m.AdultLatin.Count</a>
+                                }
+                            }
+                            else
+                            {
+                                <a href="@m.AdultLatin[0]" target="_blank">Results</a>
+                            }
+                        </td>
                     </tr>
                     <tr>
-                        <td style="width: 95%;" class="pull-left">
+                        <td style="width: 80%;" class="pull-left">
                             Adult Ballroom
                         </td>
-                        <td class="pull-right"><a href="@m.AdultBallroom" target="_blank">Results</a></td>
+                        <td class="pull-right">
+                            @if (m.AdultBallroom.Count >= 2)
+                            {
+                                for (var count = 0; count < m.AdultBallroom.Count; count++)
+                                {
+                                    var tally = count + 1;
+                                    <a href="@m.AdultBallroom[count]" target="_blank">Results - @tally  of @m.AdultBallroom.Count</a>
+                                }
+                            }
+                            else
+                            {
+                                <a href="@m.AdultBallroom[0]" target="_blank">Results</a>
+                            }
+                        </td>
                     </tr>
                 }
                 else
@@ -61,19 +100,19 @@
             </td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Competitors' List
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/12-Feb-2017/CompetitorList.pdf" target="_blank">List</a></td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Junior & Juvenille
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/12-Feb-2017/Result1.pdf" target="_blank">Results</a></td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Adult Latin
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/12-Feb-2017/Result2.pdf" target="_blank">Results</a></td>
@@ -90,19 +129,19 @@
             </td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Competitors' List
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/13-Nov-2016/CompetitorList.pdf" target="_blank">List</a></td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Junior & Juvenille
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/13-Nov-2016/Result1.pdf" target="_blank">Results</a></td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Adult Latin
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/13-Nov-2016/Result2.pdf" target="_blank">Results</a></td>
@@ -119,19 +158,19 @@
             </td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Competitors' List
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/02-Oct-2016/CompetitorList.pdf" target="_blank">List</a></td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Junior & Juvenille
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/02-Oct-2016/Result1.pdf" target="_blank">Results</a></td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Adult Latin
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/02-Oct-2016/Result2.pdf" target="_blank">Results</a></td>
@@ -148,19 +187,19 @@
             </td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Competitors' List
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Aug-2016/CompetitorList.pdf" target="_blank">List</a></td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Junior & Juvenille
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Aug-2016/Result1.pdf" target="_blank">Results</a></td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Adult Latin
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Aug-2016/Result2.pdf" target="_blank">Results</a></td>
@@ -177,19 +216,19 @@
             </td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Competitors' List
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/12-Jun-2016/CompetitorList.pdf" target="_blank">List</a></td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Junior & Juvenille
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/12-Jun-2016/Result1.pdf" target="_blank">Results</a></td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Adult Latin
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/12-Jun-2016/Result2.pdf" target="_blank">Results</a></td>
@@ -206,19 +245,19 @@
             </td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Competitors' List
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/13-Mar-2016/CompetitorList.pdf" target="_blank">List</a></td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Junior & Juvenille
             </td>
             <td class="pull-right">Only one competitor</td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Adult Latin
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/13-Mar-2016/Results1.pdf" target="_blank">Results</a></td>
@@ -235,25 +274,25 @@
             </td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Competitors' List
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Feb-2016/Competitors.xls" target="_blank">List</a></td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Juvenille
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Feb-2016/Results1.pdf" target="_blank">Results</a></td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Junior
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Feb-2016/Results2.pdf" target="_blank">Results</a></td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Adult Ballroom
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Feb-2016/Results3.pdf" target="_blank">Results</a></td>
@@ -270,13 +309,13 @@
             </td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Competitors' List
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/15-Nov-2015/CompetitorList.pdf" target="_blank">List</a></td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Adult Ballroom
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/15-Nov-2015/Results1.pdf" target="_blank">Results</a></td>
@@ -293,19 +332,19 @@
             </td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Competitors' List
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/04-Oct-2015/CompetitorList.pdf" target="_blank">List</a></td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Junior
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/04-Oct-2015/Results1.pdf" target="_blank">Results</a></td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Adult Ballroom
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/04-Oct-2015/Results2.pdf" target="_blank">Results</a></td>
@@ -322,19 +361,19 @@
             </td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Competitors' List
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/16-Aug-2015/CompetitorList.pdf" target="_blank">List</a></td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Junior - only one couple
             </td>
             <td class="pull-right"></td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Adult Ballroom
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/16-Aug-2015/Results1.pdf" target="_blank">Results</a></td>
@@ -351,13 +390,13 @@
             </td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Competitors' List
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Jun-2015/CompetitorsList.pdf" target="_blank">List</a></td>
         </tr>
         <tr>
-            <td style="width: 95%;" class="pull-left">
+            <td style="width: 80%;" class="pull-left">
                 Junior Ballroom & Latin
             </td>
             <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Jun-2015/Results1.pdf" target="_blank">Results</a></td>
@@ -382,13 +421,13 @@
                 </td>
             </tr>
             <tr>
-                <td style="width: 95%;" class="pull-left">
+                <td style="width: 80%;" class="pull-left">
                     Competitors' List
                 </td>
                 <td class="pull-right"><a href="/ResultFiles/Leatherhead/08-Mar-2015/CompetitorsList.pdf" target="_blank">List</a></td>
             </tr>
             <tr>
-                <td style="width: 95%;" class="pull-left">
+                <td style="width: 80%;" class="pull-left">
                     Junior Ballroom & Latin
                 </td>
                 <td class="pull-right"><a href="/ResultFiles/Leatherhead/08-Mar-2015/Results1.pdf" target="_blank">Results</a></td>
@@ -413,13 +452,13 @@
                 </td>
             </tr>
             <tr>
-                <td style="width: 95%;" class="pull-left">
+                <td style="width: 80%;" class="pull-left">
                     Competitors' List
                 </td>
                 <td class="pull-right"><a href="/ResultFiles/Leatherhead/15-Feb-2015/Competitors List.pdf" target="_blank">List</a></td>
             </tr>
             <tr>
-                <td style="width: 95%;" class="pull-left">
+                <td style="width: 80%;" class="pull-left">
                     Junior Ballroom & Latin
                 </td>
                 <td class="pull-right"><a href="/ResultFiles/Leatherhead/15-Feb-2015/Results1.pdf" target="_blank">Results</a></td>
@@ -444,7 +483,7 @@
                 </td>
             </tr>
             <tr>
-                <td style="width: 95%;" class="pull-left">
+                <td style="width: 80%;" class="pull-left">
                     Junior Ballroom & Latin
                 </td>
                 <td class="pull-right"><a href="/ResultFiles/Leatherhead/16-Nov-2014/Results1.pdf" target="_blank">Results</a></td>
@@ -470,7 +509,7 @@
                 </td>
             </tr>
             <tr>
-                <td style="width: 95%;" class="pull-left">
+                <td style="width: 80%;" class="pull-left">
                     All adult competitions
                 </td>
                 <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Sep-2014/Results.pdf" target="_blank">Results</a></td>

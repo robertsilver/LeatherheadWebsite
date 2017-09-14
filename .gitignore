@@ -3,3 +3,5 @@ obj/
 *.suo
 *.user
 *.pubxml
+/.vs/config/applicationhost.config
+/.vs/LeatherheadCompWeb/v15/sqlite3/storage.ide
