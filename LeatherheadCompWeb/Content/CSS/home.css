@@ -74,8 +74,11 @@
     margin: 0 auto;
     margin-top: 10px;
     font-size: 1.25em;
+    width: 100%;
 }
-
+#site-content .solo {
+    margin: 0 0 40px 0;
+}
 #site-content .programme tr:hover {
     background-color: #FE6A61;
     color: #fff;
