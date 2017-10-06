@@ -4,415 +4,437 @@
 }
 
 <div class="results">
-<h2>Results</h2>
+    <h2>Results</h2>
     @if (Model.Any())
     {
         <table class="result-table" style="width: 100%;">
-        @foreach (var m in Model)
-        {
-            if (m.CompetitionDate < DateTime.Now)
+            @foreach (var m in Model)
             {
-                <tr>
-                    <td colspan="2" class="section">
-                        @m.CompetitionDateFormatted
-                    </td>
-                </tr>
-                if (!string.IsNullOrEmpty(m.CompetitorList))
+                if (m.CompetitionDate < DateTime.Now)
                 {
                     <tr>
-                        <td style="width: 80%;" class="pull-left">
-                            Competitors' List
+                        <td colspan="2" class="section">
+                            @m.CompetitionDateFormatted
                         </td>
-                        <td class="pull-right"><a href="@m.CompetitorList" target="_blank">List</a></td>
                     </tr>
-                    <tr>
-                        <td style="width: 80%;" class="pull-left">
-                            Junior & Juvenille
-                        </td>
-                        <td class="pull-right">
-                            @if (m.JuniorJuvenilleList.Count >= 2)
+                    if (!string.IsNullOrEmpty(m.CompetitorList))
+                    {
+                        <tr>
+                            <td style="width: 80%;" class="pull-left">
+                                Competitors' List
+                            </td>
+                            <td class="pull-right"><a href="@m.CompetitorList" target="_blank">List</a></td>
+                        </tr>
+                        <tr>
+                            <td style="width: 80%;" class="pull-left">
+                                Junior & Juvenille
+                            </td>
+                            <td class="pull-right">
+                                @if (m.JuniorJuvenilleList.Count >= 2)
                             {
                                 for (var count = 0; count < m.JuniorJuvenilleList.Count; count++)
                                 {
                                     var tally = count + 1;
-                                    <a href="@m.JuniorJuvenilleList[count]" target="_blank">Results - @tally  of @m.JuniorJuvenilleList.Count</a>
+                                        <a href="@m.JuniorJuvenilleList[count]" target="_blank">Results - @tally  of @m.JuniorJuvenilleList.Count</a>
+                                    }
                                 }
-                            }
-                            else
-                            {
-                                <a href="@m.JuniorJuvenilleList[0]" target="_blank">Results</a>
-                            }
-                        </td>                       
-                    </tr>
-                    <tr>
-                        <td style="width: 80%;" class="pull-left">
-                            Adult Latin
-                        </td>
-                        <td class="pull-right">
-                            @if (m.AdultLatin.Count >= 2)
+                                else
+                                {
+                                    <a href="@m.JuniorJuvenilleList[0]" target="_blank">Results</a>
+                                }
+                            </td>
+                        </tr>
+                        if (m.Solos.Any())
+                        {
+                            <tr>
+                                <td style="width: 80%;" class="pull-left">
+                                    Solo Events
+                                </td>
+                                <td class="pull-right">
+                                    @if (m.Solos.Count >= 2)
+                                    {
+                                        for (var count = 0; count < m.Solos.Count; count++)
+                                        {
+                                            var tally = count + 1;
+                                            <a href="@m.Solos[count]" target="_blank">Results - @tally  of @m.Solos.Count</a>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <a href="@m.Solos[0]" target="_blank">Results</a>
+                                    }
+                                </td>
+                            </tr>
+                        }
+                        <tr>
+                            <td style="width: 80%;" class="pull-left">
+                                Adult Latin
+                            </td>
+                            <td class="pull-right">
+                                @if (m.AdultLatin.Count >= 2)
                             {
                                 for (var count = 0; count < m.AdultLatin.Count; count++)
                                 {
                                     var tally = count + 1;
-                                    <a href="@m.AdultLatin[count]" target="_blank">Results - @tally  of @m.AdultLatin.Count</a>
+                                        <a href="@m.AdultLatin[count]" target="_blank">Results - @tally  of @m.AdultLatin.Count</a>
+                                    }
                                 }
-                            }
-                            else
-                            {
-                                <a href="@m.AdultLatin[0]" target="_blank">Results</a>
-                            }
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="width: 80%;" class="pull-left">
-                            Adult Ballroom
-                        </td>
-                        <td class="pull-right">
-                            @if (m.AdultBallroom.Count >= 2)
+                                else
+                                {
+                                    <a href="@m.AdultLatin[0]" target="_blank">Results</a>
+                                }
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 80%;" class="pull-left">
+                                Adult Ballroom
+                            </td>
+                            <td class="pull-right">
+                                @if (m.AdultBallroom.Count >= 2)
                             {
                                 for (var count = 0; count < m.AdultBallroom.Count; count++)
                                 {
                                     var tally = count + 1;
-                                    <a href="@m.AdultBallroom[count]" target="_blank">Results - @tally  of @m.AdultBallroom.Count</a>
+                                        <a href="@m.AdultBallroom[count]" target="_blank">Results - @tally  of @m.AdultBallroom.Count</a>
+                                    }
                                 }
-                            }
-                            else
-                            {
-                                <a href="@m.AdultBallroom[0]" target="_blank">Results</a>
-                            }
-                        </td>
-                    </tr>
-                }
-                else
-                {
-                    <tr>
-                        <td colspan="2" class="pull-left">
-                            Awaiting results.  Last updated @DateTime.Now.ToString("dd-MMM-yyyy")
-                        </td>
-                    </tr>
+                                else
+                                {
+                                    <a href="@m.AdultBallroom[0]" target="_blank">Results</a>
+                                }
+                            </td>
+                        </tr>
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="2" class="pull-left">
+                                Awaiting results.  Last updated @DateTime.Now.ToString("dd-MMM-yyyy")
+                            </td>
+                        </tr>
+                    }
                 }
             }
-        }
 
-        <tr>
-            <td colspan="2" class="section">
-                12th February 2017
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Competitors' List
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/12-Feb-2017/CompetitorList.pdf" target="_blank">List</a></td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Junior & Juvenille
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/12-Feb-2017/Result1.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Adult Latin
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/12-Feb-2017/Result2.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td class="pull-left">
-                Adult Ballroom
-            </td>
-            <td class="pull-right"><a href="~/ResultFiles/Leatherhead/12-Feb-2017/Result3.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td colspan="2" class="section">
-                13th November 2016
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Competitors' List
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/13-Nov-2016/CompetitorList.pdf" target="_blank">List</a></td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Junior & Juvenille
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/13-Nov-2016/Result1.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Adult Latin
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/13-Nov-2016/Result2.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td class="pull-left">
-                Adult Ballroom
-            </td>
-            <td class="pull-right"><a href="~/ResultFiles/Leatherhead/13-Nov-2016/Result3.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td colspan="2" class="section">
-                2nd October 2016
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Competitors' List
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/02-Oct-2016/CompetitorList.pdf" target="_blank">List</a></td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Junior & Juvenille
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/02-Oct-2016/Result1.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Adult Latin
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/02-Oct-2016/Result2.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td class="pull-left">
-                Adult Ballroom
-            </td>
-            <td class="pull-right"><a href="~/ResultFiles/Leatherhead/02-Oct-2016/Result3.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td colspan="2" class="section">
-                14th August 2016
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Competitors' List
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Aug-2016/CompetitorList.pdf" target="_blank">List</a></td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Junior & Juvenille
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Aug-2016/Result1.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Adult Latin
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Aug-2016/Result2.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td class="pull-left">
-                Adult Ballroom
-            </td>
-            <td class="pull-right"><a href="~/ResultFiles/Leatherhead/14-Aug-2016/Result3.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td colspan="2" class="section">
-                12th June 2016
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Competitors' List
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/12-Jun-2016/CompetitorList.pdf" target="_blank">List</a></td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Junior & Juvenille
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/12-Jun-2016/Result1.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Adult Latin
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/12-Jun-2016/Result2.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td class="pull-left">
-                Adult Ballroom
-            </td>
-            <td class="pull-right"><a href="~/ResultFiles/Leatherhead/12-Jun-2016/Result3.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td colspan="2" class="section">
-                13th March 2016
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Competitors' List
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/13-Mar-2016/CompetitorList.pdf" target="_blank">List</a></td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Junior & Juvenille
-            </td>
-            <td class="pull-right">Only one competitor</td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Adult Latin
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/13-Mar-2016/Results1.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td class="pull-left">
-                Adult Ballroom
-            </td>
-            <td class="pull-right"><a href="~/ResultFiles/Leatherhead/13-Mar-2016/Results2.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td colspan="2" class="section">
-                14th February 2016
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Competitors' List
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Feb-2016/Competitors.xls" target="_blank">List</a></td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Juvenille
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Feb-2016/Results1.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Junior
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Feb-2016/Results2.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Adult Ballroom
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Feb-2016/Results3.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td class="pull-left">
-                Adult Latin
-            </td>
-            <td class="pull-right"><a href="~/ResultFiles/Leatherhead/14-Feb-2016/Results4.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td colspan="2" class="section">
-                15th November 2015
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Competitors' List
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/15-Nov-2015/CompetitorList.pdf" target="_blank">List</a></td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Adult Ballroom
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/15-Nov-2015/Results1.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td class="pull-left">
-                Adult Latin
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/15-Nov-2015/Results2.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td colspan="2" class="section">
-                4th October 2015
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Competitors' List
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/04-Oct-2015/CompetitorList.pdf" target="_blank">List</a></td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Junior
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/04-Oct-2015/Results1.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Adult Ballroom
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/04-Oct-2015/Results2.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td class="pull-left">
-                Adult Latin
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/04-Oct-2015/Results3.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td colspan="2" class="section">
-                16th August 2015
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Competitors' List
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/16-Aug-2015/CompetitorList.pdf" target="_blank">List</a></td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Junior - only one couple
-            </td>
-            <td class="pull-right"></td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Adult Ballroom
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/16-Aug-2015/Results1.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td class="pull-left">
-                Adult Latin
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/16-Aug-2015/Results2.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td colspan="2" class="section">
-                14th June 2015
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Competitors' List
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Jun-2015/CompetitorsList.pdf" target="_blank">List</a></td>
-        </tr>
-        <tr>
-            <td style="width: 80%;" class="pull-left">
-                Junior Ballroom & Latin
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Jun-2015/Results1.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td class="pull-left">
-                Adult Latin
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Jun-2015/Results2.pdf" target="_blank">Results</a></td>
-        </tr>
-        <tr>
-            <td class="pull-left">
-                Adult Ballroom
-            </td>
-            <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Jun-2015/Results3.pdf" target="_blank">Results</a></td>
-        </tr>
+            <tr>
+                <td colspan="2" class="section">
+                    12th February 2017
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Competitors' List
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/12-Feb-2017/CompetitorList.pdf" target="_blank">List</a></td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Junior & Juvenille
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/12-Feb-2017/Result1.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Adult Latin
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/12-Feb-2017/Result2.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td class="pull-left">
+                    Adult Ballroom
+                </td>
+                <td class="pull-right"><a href="~/ResultFiles/Leatherhead/12-Feb-2017/Result3.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="section">
+                    13th November 2016
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Competitors' List
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/13-Nov-2016/CompetitorList.pdf" target="_blank">List</a></td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Junior & Juvenille
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/13-Nov-2016/Result1.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Adult Latin
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/13-Nov-2016/Result2.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td class="pull-left">
+                    Adult Ballroom
+                </td>
+                <td class="pull-right"><a href="~/ResultFiles/Leatherhead/13-Nov-2016/Result3.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="section">
+                    2nd October 2016
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Competitors' List
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/02-Oct-2016/CompetitorList.pdf" target="_blank">List</a></td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Junior & Juvenille
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/02-Oct-2016/Result1.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Adult Latin
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/02-Oct-2016/Result2.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td class="pull-left">
+                    Adult Ballroom
+                </td>
+                <td class="pull-right"><a href="~/ResultFiles/Leatherhead/02-Oct-2016/Result3.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="section">
+                    14th August 2016
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Competitors' List
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Aug-2016/CompetitorList.pdf" target="_blank">List</a></td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Junior & Juvenille
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Aug-2016/Result1.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Adult Latin
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Aug-2016/Result2.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td class="pull-left">
+                    Adult Ballroom
+                </td>
+                <td class="pull-right"><a href="~/ResultFiles/Leatherhead/14-Aug-2016/Result3.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="section">
+                    12th June 2016
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Competitors' List
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/12-Jun-2016/CompetitorList.pdf" target="_blank">List</a></td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Junior & Juvenille
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/12-Jun-2016/Result1.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Adult Latin
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/12-Jun-2016/Result2.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td class="pull-left">
+                    Adult Ballroom
+                </td>
+                <td class="pull-right"><a href="~/ResultFiles/Leatherhead/12-Jun-2016/Result3.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="section">
+                    13th March 2016
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Competitors' List
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/13-Mar-2016/CompetitorList.pdf" target="_blank">List</a></td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Junior & Juvenille
+                </td>
+                <td class="pull-right">Only one competitor</td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Adult Latin
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/13-Mar-2016/Results1.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td class="pull-left">
+                    Adult Ballroom
+                </td>
+                <td class="pull-right"><a href="~/ResultFiles/Leatherhead/13-Mar-2016/Results2.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="section">
+                    14th February 2016
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Competitors' List
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Feb-2016/Competitors.xls" target="_blank">List</a></td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Juvenille
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Feb-2016/Results1.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Junior
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Feb-2016/Results2.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Adult Ballroom
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Feb-2016/Results3.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td class="pull-left">
+                    Adult Latin
+                </td>
+                <td class="pull-right"><a href="~/ResultFiles/Leatherhead/14-Feb-2016/Results4.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="section">
+                    15th November 2015
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Competitors' List
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/15-Nov-2015/CompetitorList.pdf" target="_blank">List</a></td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Adult Ballroom
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/15-Nov-2015/Results1.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td class="pull-left">
+                    Adult Latin
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/15-Nov-2015/Results2.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="section">
+                    4th October 2015
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Competitors' List
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/04-Oct-2015/CompetitorList.pdf" target="_blank">List</a></td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Junior
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/04-Oct-2015/Results1.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Adult Ballroom
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/04-Oct-2015/Results2.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td class="pull-left">
+                    Adult Latin
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/04-Oct-2015/Results3.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="section">
+                    16th August 2015
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Competitors' List
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/16-Aug-2015/CompetitorList.pdf" target="_blank">List</a></td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Junior - only one couple
+                </td>
+                <td class="pull-right"></td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Adult Ballroom
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/16-Aug-2015/Results1.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td class="pull-left">
+                    Adult Latin
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/16-Aug-2015/Results2.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="section">
+                    14th June 2015
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Competitors' List
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Jun-2015/CompetitorsList.pdf" target="_blank">List</a></td>
+            </tr>
+            <tr>
+                <td style="width: 80%;" class="pull-left">
+                    Junior Ballroom & Latin
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Jun-2015/Results1.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td class="pull-left">
+                    Adult Latin
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Jun-2015/Results2.pdf" target="_blank">Results</a></td>
+            </tr>
+            <tr>
+                <td class="pull-left">
+                    Adult Ballroom
+                </td>
+                <td class="pull-right"><a href="/ResultFiles/Leatherhead/14-Jun-2015/Results3.pdf" target="_blank">Results</a></td>
+            </tr>
         </table>
         <table class="result-table" style="width: 100%;">
             <tr>

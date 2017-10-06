@@ -21,12 +21,13 @@ namespace Leatherhead.Business
 
                 resultData.Add(new ResultsPoco()
                 {
-                    CompetitionDate =  r.CompetitionDate,
-                    CompetitionName =  r.CompetitionName,
-                    CompetitorList =  r.CompetitorList,
+                    CompetitionDate = r.CompetitionDate,
+                    CompetitionName = r.CompetitionName,
+                    CompetitorList = r.CompetitorList,
                     JuniorJuvenilleList = r.JuniorJuvenilleList,
+                    Solos = r.Solos,
                     AdultLatin = r.AdultLatin,
-                    AdultBallroom =  r.AdultBallroom,
+                    AdultBallroom = r.AdultBallroom,
                     CompetitionDateFormatted = Helper.OrdinalValue(day) + " " + r.CompetitionDate.ToString("MMMM yyyy")
                 });
             }
