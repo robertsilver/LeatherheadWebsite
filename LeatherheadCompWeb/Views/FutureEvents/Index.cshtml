@@ -5,9 +5,9 @@
 
 <div class="future-events">
     <h2>Future Events</h2>
-    @if (!Model.Any())
+    @if (Model == null || !Model.Any())
     {
-        <div>There are currently no competitions planned.</div>
+        <div>There are currently no planned competitions.</div>
     }
     else
     {

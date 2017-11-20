@@ -327,6 +327,13 @@
     <Content Include="ResultFiles\Leatherhead\01-Oct-2017\Result4.pdf" />
     <Content Include="ResultFiles\Leatherhead\01-Oct-2017\Result5.pdf" />
     <Content Include="ResultFiles\Leatherhead\01-Oct-2017\Solos.pdf" />
+    <Content Include="ResultFiles\Leatherhead\12-Nov-2017\Competitor List.pdf" />
+    <Content Include="ResultFiles\Leatherhead\12-Nov-2017\Results1.pdf" />
+    <Content Include="ResultFiles\Leatherhead\12-Nov-2017\Results2.pdf" />
+    <Content Include="ResultFiles\Leatherhead\12-Nov-2017\Results3.pdf" />
+    <Content Include="ResultFiles\Leatherhead\12-Nov-2017\Results4.pdf" />
+    <Content Include="ResultFiles\Leatherhead\12-Nov-2017\Results5.pdf" />
+    <Content Include="ResultFiles\Leatherhead\12-Nov-2017\Results6.pdf" />
     <None Include="Scripts\Lib\jquery-1.8.2.intellisense.js" />
     <Content Include="ResultFiles\Leatherhead\26-Jan-2014\Temporary.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

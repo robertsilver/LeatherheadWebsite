@@ -1,22 +1,26 @@
 ﻿[
   {
-    "CompetitionDate": "2017-04-02",
+    "CompetitionDate": "2018-02-11",
+    "CompetitionName": "Bill & Silvia Mitchell Tribute Day"
+  },
+  {
+    "CompetitionDate": "2018-04-15",
     "CompetitionName": "Cairncross/Follett Awards Day"
   },
   {
-    "CompetitionDate": "2017-07-16",
+    "CompetitionDate": "2018-07-15",
     "CompetitionName": "Edward Noyce Tribute Day"
   },
-    {
-    "CompetitionDate": "2017-11-12",
-    "CompetitionName": "Sparkle Designs Awards Day"
-  },
   {
-    "CompetitionDate": "2017-08-20",
+    "CompetitionDate": "2018-08-19",
     "CompetitionName": "Jim Langton Tribute Day"
   },
   {
-    "CompetitionDate": "2017-10-01",
+    "CompetitionDate": "2018-10-07",
     "CompetitionName": "David Osborn Tribute Day"
+  },
+  {
+    "CompetitionDate": "2018-11-11",
+    "CompetitionName": "Sparkle Designs Awards Day"
   }
 ]
