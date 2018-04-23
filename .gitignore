@@ -7,3 +7,7 @@ obj/
 /.vs/LeatherheadCompWeb/v15/sqlite3/storage.ide
 *.ide
 .vs/LeatherheadCompWeb/v15/Server/sqlite3/storage.ide
+.vs/LeatherheadCompWeb/v15/Server/sqlite3/storage.ide-wal
+.vs/LeatherheadCompWeb/v15/Server/sqlite3/storage.ide
+.vs/LeatherheadCompWeb/v15/Server/sqlite3/storage.ide-shm
+*.ide
