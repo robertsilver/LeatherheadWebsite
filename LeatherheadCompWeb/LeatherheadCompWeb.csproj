@@ -232,6 +232,9 @@
     <Content Include="Assets\JSON\Results.json" />
     <Content Include="Assets\JSON\CompDates.json" />
     <Content Include="Config\app_office.config" />
+    <Content Include="Assets\Programmes\Adult entry.doc" />
+    <Content Include="Assets\Programmes\JuvJun_Entry.doc" />
+    <Content Include="Assets\Programmes\Solo JuvJun entry.doc" />
     <None Include="Properties\PublishProfiles\LHC.pubxml" />
     <None Include="Properties\PublishProfiles\LocalMachine.pubxml" />
     <Content Include="Programmes\Aug-2014 programme.txt" />
