@@ -1,8 +1,17 @@
 ﻿[
   {
-    "CompetitionDate": "2018-08-15",
+    "CompetitionDate": "2018-10-07",
     "CompetitionName": "",
     "CompetitorList": "",
+    "JuniorJuvenilleList": [ "/ResultFiles/Leatherhead/07-Oct-2018/Result1.pdf" ],
+    "AdultLatin": [ "/ResultFiles/Leatherhead/07-Oct-2018/Result3.pdf" ],
+    "Solos": [ "/ResultFiles/Leatherhead/07-Oct-2018/Result2.pdf" ],
+    "AdultBallroom": [ "/ResultFiles/Leatherhead/07-Oct-2018/Result4.pdf" ]
+  },
+  {
+    "CompetitionDate": "2018-08-15",
+    "CompetitionName": "",
+    "CompetitorList": "/ResultFiles/Leatherhead/19-Aug-2018/CompetitorList.pdf",
     "JuniorJuvenilleList": [ "/ResultFiles/Leatherhead/19-Aug-2018/Result1.pdf" ],
     "AdultLatin": [ "/ResultFiles/Leatherhead/19-Aug-2018/Result3.pdf" ],
     "Solos": [ "/ResultFiles/Leatherhead/19-Aug-2018/Result2.pdf" ],
