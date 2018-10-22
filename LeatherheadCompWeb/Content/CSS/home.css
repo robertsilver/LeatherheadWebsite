@@ -38,6 +38,19 @@
     margin-top: 15px;
 }
 
+#site-content .promoter {
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+#site-content .trophy-day {
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 15px;
+}
 
 #site-content .sponsor {
     font-weight: bold;
