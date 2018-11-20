@@ -359,6 +359,18 @@
     <Content Include="ResultFiles\Leatherhead\07-Oct-2018\Result3.pdf" />
     <Content Include="ResultFiles\Leatherhead\07-Oct-2018\Result4.pdf" />
     <Content Include="ResultFiles\Leatherhead\07-Oct-2018\Result5.pdf" />
+    <Content Include="ResultFiles\Leatherhead\11-Feb-2018\CompetitorList.pdf" />
+    <Content Include="ResultFiles\Leatherhead\11-Feb-2018\Result1.pdf" />
+    <Content Include="ResultFiles\Leatherhead\11-Feb-2018\Result2.pdf" />
+    <Content Include="ResultFiles\Leatherhead\11-Feb-2018\Result3.pdf" />
+    <Content Include="ResultFiles\Leatherhead\11-Feb-2018\Result4.pdf" />
+    <Content Include="ResultFiles\Leatherhead\11-Feb-2018\Result5.pdf" />
+    <Content Include="ResultFiles\Leatherhead\11-Nov-2018\CompetitorList.pdf" />
+    <Content Include="ResultFiles\Leatherhead\11-Nov-2018\Result1.pdf" />
+    <Content Include="ResultFiles\Leatherhead\11-Nov-2018\Result2.pdf" />
+    <Content Include="ResultFiles\Leatherhead\11-Nov-2018\Result3.pdf" />
+    <Content Include="ResultFiles\Leatherhead\11-Nov-2018\Result4.pdf" />
+    <Content Include="ResultFiles\Leatherhead\11-Nov-2018\Result5.pdf" />
     <None Include="Scripts\Lib\jquery-1.8.2.intellisense.js" />
     <Content Include="ResultFiles\Leatherhead\26-Jan-2014\Temporary.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -406,7 +418,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="ResultFiles\Leatherhead\11-Feb-2018\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">
