@@ -1,5 +1,14 @@
 ﻿[
   {
+    "CompetitionDate": "2019-04-14",
+    "CompetitionName": "",
+    "CompetitorList": "/ResultFiles/Leatherhead/14-Apr-2019/CompetitorList.pdf",
+    "JuniorJuvenilleList": [ "/ResultFiles/Leatherhead/14-Apr-2019/Result1.pdf" ],
+    "AdultLatin": [ "/ResultFiles/Leatherhead/14-Apr-2019/Result3.pdf" ],
+    "Solos": [ "/ResultFiles/Leatherhead/14-Apr-2019/Result2.pdf" ],
+    "AdultBallroom": [ "/ResultFiles/Leatherhead/14-Apr-2019/Result4.pdf" ]
+  },
+  {
     "CompetitionDate": "2019-02-10",
     "CompetitionName": "",
     "CompetitorList": "/ResultFiles/Leatherhead/10-Feb-2019/CompetitorList.pdf",
