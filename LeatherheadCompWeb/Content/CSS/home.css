@@ -5,6 +5,13 @@
     font-size: 24px;
 }
 
+#site-content .junior-solos {
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
 #site-content .national-league-event {
     text-align: center;
     font-size: 16px;
