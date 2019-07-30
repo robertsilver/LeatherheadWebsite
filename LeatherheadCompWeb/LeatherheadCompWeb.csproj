@@ -428,6 +428,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="ResultFiles\Leatherhead\14-Jul-2019\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">
