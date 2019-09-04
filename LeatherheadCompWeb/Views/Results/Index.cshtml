@@ -10,7 +10,7 @@
         <table class="result-table" style="width: 100%;">
             @foreach (var m in Model)
             {
-                if (m.CompetitionDate < DateTime.Now)
+                if (m.CompetitionDate < DateTime.Now && m.CompetitorList.Any())
                 {
                     <tr>
                         <td colspan="2" class="section">
@@ -139,6 +139,10 @@
                     <tr>
                         <td colspan="2" class="pull-left">
                             Awaiting results.  Last updated @DateTime.Now.ToString("dd-MMM-yyyy")
+                            @if (m.ResultsRequested.HasValue)
+                            {
+                                <p style="margin-bottom: 0;">Results requested, again, on @m.ResultsRequested.Value.ToString("dd-MMM-yyyy")</p>
+                            }
                         </td>
                     </tr>
                 }

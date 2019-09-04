@@ -13,6 +13,7 @@ namespace Leatherhead.DataAccess
         public List<string> Under10s { get; set; }
         public List<string> AdultLatin { get; set; }
         public List<string> AdultBallroom { get; set; }
+        public DateTime? ResultsRequested { get; set; }
 
         public static List<ResultsData> GetAll(string url)
         {

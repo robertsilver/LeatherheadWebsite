@@ -14,5 +14,6 @@ namespace Leatherhead.Business
         public List<string> AdultLatin { get; set; }
         public List<string> AdultBallroom { get; set; }
         public string CompetitionDateFormatted { get; set; }
+        public DateTime? ResultsRequested { get; set; }
     }
 }
