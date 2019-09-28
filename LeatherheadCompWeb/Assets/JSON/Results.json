@@ -1,35 +1,5 @@
 ﻿[
   {
-    "CompetitionDate": "2019-08-18",
-    "CompetitionName": "",
-    "CompetitorList": "/ResultFiles/Leatherhead/18-Aug-2019/CompetitorList.pdf",
-    "ResultsRequested": "",
-    "JuniorJuvenilleList": [ "/ResultFiles/Leatherhead/18-Aug-2019/Result1.pdf" ],
-    "Solos": [ "/ResultFiles/Leatherhead/18-Aug-2019/Result2.pdf" ],
-    "Under10s": [ "/ResultFiles/Leatherhead/18-Aug-2019/Result3.pdf" ],
-    "AdultLatin": [ "/ResultFiles/Leatherhead/18-Aug-2019/Result4.pdf" ],
-    "AdultBallroom": [ "/ResultFiles/Leatherhead/18-Aug-2019/Result5.pdf" ]
-  },
-  {
-    "CompetitionDate": "2019-07-14",
-    "CompetitionName": "",
-    "CompetitorList": "/ResultFiles/Leatherhead/14-Jul-2019/CompetitorList.pdf",
-    "JuniorJuvenilleList": [ "/ResultFiles/Leatherhead/14-Jul-2019/Result1.pdf", "/ResultFiles/Leatherhead/14-Jul-2019/Result2.pdf", "/ResultFiles/Leatherhead/14-Jul-2019/Result5.pdf" ],
-    "Solos": [ "/ResultFiles/Leatherhead/14-Jul-2019/Result6.pdf" ],
-    "Under10s": [ "/ResultFiles/Leatherhead/14-Jul-2019/Result3.pdf", "/ResultFiles/Leatherhead/14-Jul-2019/Result4.pdf" ],
-    "AdultLatin": [ "/ResultFiles/Leatherhead/14-Jul-2019/Result7.pdf" ],
-    "AdultBallroom": [ "/ResultFiles/Leatherhead/14-Jul-2019/Result8.pdf" ]
-  },
-  {
-    "CompetitionDate": "2019-04-14",
-    "CompetitionName": "",
-    "CompetitorList": "/ResultFiles/Leatherhead/14-Apr-2019/CompetitorList.pdf",
-    "JuniorJuvenilleList": [ "/ResultFiles/Leatherhead/14-Apr-2019/Result1.pdf" ],
-    "AdultLatin": [ "/ResultFiles/Leatherhead/14-Apr-2019/Result3.pdf" ],
-    "Solos": [ "/ResultFiles/Leatherhead/14-Apr-2019/Result2.pdf" ],
-    "AdultBallroom": [ "/ResultFiles/Leatherhead/14-Apr-2019/Result4.pdf" ]
-  },
-  {
     "CompetitionDate": "2019-02-10",
     "CompetitionName": "",
     "CompetitorList": "/ResultFiles/Leatherhead/10-Feb-2019/CompetitorList.pdf",
