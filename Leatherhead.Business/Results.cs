@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using Leatherhead.DataAccess;
+using System.Collections.Generic;
 using System.Linq;
-using Leatherhead.DataAccess;
 
 namespace Leatherhead.Business
 {
@@ -28,7 +28,9 @@ namespace Leatherhead.Business
                     Solos = r.Solos,
                     AdultLatin = r.AdultLatin,
                     AdultBallroom = r.AdultBallroom,
-                    CompetitionDateFormatted = Helper.OrdinalValue(day) + " " + r.CompetitionDate.ToString("MMMM yyyy")
+                    CompetitionDateFormatted = Helper.OrdinalValue(day) + " " + r.CompetitionDate.ToString("MMMM yyyy"),
+                    Under10s = r.Under10s,
+                    ResultsRequested = r.ResultsRequested
                 });
             }
 

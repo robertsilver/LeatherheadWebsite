@@ -376,6 +376,25 @@
     <Content Include="ResultFiles\Leatherhead\10-Feb-2019\Result2.pdf" />
     <Content Include="ResultFiles\Leatherhead\10-Feb-2019\Result3.pdf" />
     <Content Include="ResultFiles\Leatherhead\10-Feb-2019\Result4.pdf" />
+    <Content Include="ResultFiles\Leatherhead\14-Apr-2019\CompetitorList.pdf" />
+    <Content Include="ResultFiles\Leatherhead\14-Apr-2019\Result1.pdf" />
+    <Content Include="ResultFiles\Leatherhead\14-Apr-2019\Result2.pdf" />
+    <Content Include="ResultFiles\Leatherhead\14-Apr-2019\Result3.pdf" />
+    <Content Include="ResultFiles\Leatherhead\14-Apr-2019\Result4.pdf" />
+    <Content Include="ResultFiles\Leatherhead\14-Jul-2019\Result1.pdf" />
+    <Content Include="ResultFiles\Leatherhead\14-Jul-2019\Result2.pdf" />
+    <Content Include="ResultFiles\Leatherhead\14-Jul-2019\Result3.pdf" />
+    <Content Include="ResultFiles\Leatherhead\14-Jul-2019\Result4.pdf" />
+    <Content Include="ResultFiles\Leatherhead\14-Jul-2019\Result5.pdf" />
+    <Content Include="ResultFiles\Leatherhead\14-Jul-2019\Result6.pdf" />
+    <Content Include="ResultFiles\Leatherhead\14-Jul-2019\Result7.pdf" />
+    <Content Include="ResultFiles\Leatherhead\14-Jul-2019\Result8.pdf" />
+    <Content Include="ResultFiles\Leatherhead\14-Jul-2019\CompetitorList.pdf" />
+    <Content Include="ResultFiles\Leatherhead\18-Aug-2019\CompetitorList.pdf" />
+    <Content Include="ResultFiles\Leatherhead\18-Aug-2019\Result1.pdf" />
+    <Content Include="ResultFiles\Leatherhead\18-Aug-2019\Result2.pdf" />
+    <Content Include="ResultFiles\Leatherhead\18-Aug-2019\Result3.pdf" />
+    <Content Include="ResultFiles\Leatherhead\18-Aug-2019\Result4.pdf" />
     <None Include="Scripts\Lib\jquery-1.8.2.intellisense.js" />
     <Content Include="ResultFiles\Leatherhead\26-Jan-2014\Temporary.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

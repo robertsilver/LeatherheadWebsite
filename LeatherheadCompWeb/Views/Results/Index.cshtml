@@ -10,109 +10,141 @@
         <table class="result-table" style="width: 100%;">
             @foreach (var m in Model)
             {
-                if (m.CompetitionDate < DateTime.Now)
+                if (m.CompetitionDate < DateTime.Now && m.CompetitorList.Any())
                 {
                     <tr>
                         <td colspan="2" class="section">
                             @m.CompetitionDateFormatted
                         </td>
                     </tr>
-                    if (!string.IsNullOrEmpty(m.CompetitorList))
-                    {
-                        <tr>
-                            <td style="width: 80%;" class="pull-left">
-                                Competitors' List
-                            </td>
-                            <td class="pull-right"><a href="@m.CompetitorList" target="_blank">List</a></td>
-                        </tr>
-                        <tr>
-                            <td style="width: 80%;" class="pull-left">
-                                Junior & Juvenille
-                            </td>
-                            <td class="pull-right">
-                                @if (m.JuniorJuvenilleList.Count >= 2)
+                    <tr>
+                        <td style="width: 80%;" class="pull-left">
+                            Competitors' List
+                        </td>
+                        <td class="pull-right">
+                            @if (string.IsNullOrEmpty(m.CompetitorList))
+                            {
+                                <label>Has not been provided</label>
+                            }
+                            else
+                            {
+                                <a href="@m.CompetitorList" target="_blank">List</a>
+                            }
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 80%;" class="pull-left">
+                            Junior & Juvenille
+                        </td>
+                        <td class="pull-right">
+                            @if (m.JuniorJuvenilleList.Count >= 2)
                             {
                                 for (var count = 0; count < m.JuniorJuvenilleList.Count; count++)
                                 {
                                     var tally = count + 1;
-                                        <a href="@m.JuniorJuvenilleList[count]" target="_blank">Results - @tally  of @m.JuniorJuvenilleList.Count</a>
+                                    <a href="@m.JuniorJuvenilleList[count]" target="_blank">Results - @tally  of @m.JuniorJuvenilleList.Count</a>
+                                }
+                            }
+                            else
+                            {
+                                <a href="@m.JuniorJuvenilleList[0]" target="_blank">Results</a>
+                            }
+                        </td>
+                    </tr>
+                    if (m.Solos != null && m.Solos.Any())
+                    {
+                        <tr>
+                            <td style="width: 80%;" class="pull-left">
+                                Solo Events
+                            </td>
+                            <td class="pull-right">
+                                @if (m.Solos.Count >= 2)
+                                {
+                                    for (var count = 0; count < m.Solos.Count; count++)
+                                    {
+                                        var tally = count + 1;
+                                        <a href="@m.Solos[count]" target="_blank">Results - @tally  of @m.Solos.Count</a>
                                     }
                                 }
                                 else
                                 {
-                                    <a href="@m.JuniorJuvenilleList[0]" target="_blank">Results</a>
+                                    <a href="@m.Solos[0]" target="_blank">Results</a>
                                 }
                             </td>
                         </tr>
-                        if (m.Solos.Any())
-                        {
-                            <tr>
-                                <td style="width: 80%;" class="pull-left">
-                                    Solo Events
-                                </td>
-                                <td class="pull-right">
-                                    @if (m.Solos.Count >= 2)
-                                    {
-                                        for (var count = 0; count < m.Solos.Count; count++)
-                                        {
-                                            var tally = count + 1;
-                                            <a href="@m.Solos[count]" target="_blank">Results - @tally  of @m.Solos.Count</a>
-                                        }
-                                    }
-                                    else
-                                    {
-                                        <a href="@m.Solos[0]" target="_blank">Results</a>
-                                    }
-                                </td>
-                            </tr>
-                        }
+                    }
+                    if (m.Under10s != null && m.Under10s.Any())
+                    {
                         <tr>
                             <td style="width: 80%;" class="pull-left">
-                                Adult Latin
+                                Under 10s
                             </td>
                             <td class="pull-right">
-                                @if (m.AdultLatin.Count >= 2)
+                                @if (m.Under10s.Count >= 2)
+                                {
+                                    for (var count = 0; count < m.Under10s.Count; count++)
+                                    {
+                                        var tally = count + 1;
+                                        <a href="@m.Under10s[count]" target="_blank">Results - @tally  of @m.Under10s.Count</a>
+                                    }
+                                }
+                                else
+                                {
+                                    <a href="@m.Under10s[0]" target="_blank">Results</a>
+                                }
+                            </td>
+                        </tr>
+                    }
+                    <tr>
+                        <td style="width: 80%;" class="pull-left">
+                            Adult Latin
+                        </td>
+                        <td class="pull-right">
+                            @if (m.AdultLatin.Count >= 2)
                             {
                                 for (var count = 0; count < m.AdultLatin.Count; count++)
                                 {
                                     var tally = count + 1;
-                                        <a href="@m.AdultLatin[count]" target="_blank">Results - @tally  of @m.AdultLatin.Count</a>
-                                    }
+                                    <a href="@m.AdultLatin[count]" target="_blank">Results - @tally  of @m.AdultLatin.Count</a>
                                 }
-                                else
-                                {
-                                    <a href="@m.AdultLatin[0]" target="_blank">Results</a>
-                                }
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 80%;" class="pull-left">
-                                Adult Ballroom
-                            </td>
-                            <td class="pull-right">
-                                @if (m.AdultBallroom.Count >= 2)
+                            }
+                            else
+                            {
+                                <a href="@m.AdultLatin[0]" target="_blank">Results</a>
+                            }
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 80%;" class="pull-left">
+                            Adult Ballroom
+                        </td>
+                        <td class="pull-right">
+                            @if (m.AdultBallroom.Count >= 2)
                             {
                                 for (var count = 0; count < m.AdultBallroom.Count; count++)
                                 {
                                     var tally = count + 1;
-                                        <a href="@m.AdultBallroom[count]" target="_blank">Results - @tally  of @m.AdultBallroom.Count</a>
-                                    }
+                                    <a href="@m.AdultBallroom[count]" target="_blank">Results - @tally  of @m.AdultBallroom.Count</a>
                                 }
-                                else
-                                {
-                                    <a href="@m.AdultBallroom[0]" target="_blank">Results</a>
-                                }
-                            </td>
-                        </tr>
-                    }
-                    else
-                    {
-                        <tr>
-                            <td colspan="2" class="pull-left">
-                                Awaiting results.  Last updated @DateTime.Now.ToString("dd-MMM-yyyy")
-                            </td>
-                        </tr>
-                    }
+                            }
+                            else
+                            {
+                                <a href="@m.AdultBallroom[0]" target="_blank">Results</a>
+                            }
+                        </td>
+                    </tr>
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="2" class="pull-left">
+                            Awaiting results.  Last updated @DateTime.Now.ToString("dd-MMM-yyyy")
+                            @if (m.ResultsRequested.HasValue)
+                            {
+                                <p style="margin-bottom: 0;">Results requested, again, on @m.ResultsRequested.Value.ToString("dd-MMM-yyyy")</p>
+                            }
+                        </td>
+                    </tr>
                 }
             }
 
