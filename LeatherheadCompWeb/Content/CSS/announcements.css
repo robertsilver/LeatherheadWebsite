@@ -1,5 +1,30 @@
-﻿#site-content .announcements { float: right;width: 24%; padding-top: 10px;padding-bottom: 10px; padding-left: 10px;}
-#site-content .announcements p {margin: 0; padding:0; padding-left: 5px;}
-#site-content .announcements .sponsor { font-weight: bold;}
-#site-content .entry-forms{ float: right;}
-#site-content .entry-forms a { text-decoration: underline;}
+﻿#site-content .announcements {
+    float: right;
+    width: 24%;
+    padding: 10px;
+}
+
+    #site-content .announcements p {
+        margin: 0;
+        padding: 0 0 0 5px;
+    }
+
+    #site-content .announcements .sponsor {
+        font-weight: bold;
+    }
+
+#site-content .entry-forms {
+    float: right;
+}
+
+    #site-content .entry-forms a {
+        text-decoration: underline;
+    }
+
+#site-content .entries h1 {
+    margin-bottom: 5px;
+}
+
+#site-content .entries .solo-events {
+    margin-top: 10px;
+}
