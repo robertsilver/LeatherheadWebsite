@@ -1,5 +1,16 @@
 ﻿[
   {
+    "CompetitionDate": "2020-03-15",
+    "CompetitionName": "",
+    "CompetitorList": "/ResultFiles/Leatherhead/15-Mar-2020/CompetitorList.xls",
+    "ResultsRequested": "",
+    "JuniorJuvenilleList": [ "/ResultFiles/Leatherhead/15-Mar-2020/Result1.pdf" ],
+    "Solos": [ "/ResultFiles/Leatherhead/15-Mar-2020/Result2.pdf" ],
+    "Under10s": [],
+    "AdultLatin": [ "/ResultFiles/Leatherhead/15-Mar-2020/Result3.pdf" ],
+    "AdultBallroom": [ "/ResultFiles/Leatherhead/15-Mar-2020/Result4.pdf" ]
+  },
+  {
     "CompetitionDate": "2019-11-10",
     "CompetitionName": "",
     "CompetitorList": "/ResultFiles/Leatherhead/10-Nov-2019/CompetitorList.xls",
@@ -17,7 +28,7 @@
     "ResultsRequested": "",
     "JuniorJuvenilleList": [ "/ResultFiles/Leatherhead/06-Oct-2019/Result1.pdf" ],
     "Solos": [ "/ResultFiles/Leatherhead/06-Oct-2019/Result2.pdf" ],
-    "Under10s": [ ],
+    "Under10s": [],
     "AdultLatin": [ "/ResultFiles/Leatherhead/06-Oct-2019/Result3.pdf" ],
     "AdultBallroom": [ "/ResultFiles/Leatherhead/06-Oct-2019/Result4.pdf" ]
   },
