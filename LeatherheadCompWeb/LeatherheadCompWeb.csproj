@@ -400,6 +400,11 @@
     <Content Include="ResultFiles\Leatherhead\06-Oct-2019\Result2.pdf" />
     <Content Include="ResultFiles\Leatherhead\06-Oct-2019\Result3.pdf" />
     <Content Include="ResultFiles\Leatherhead\06-Oct-2019\Result4.pdf" />
+    <Content Include="ResultFiles\Leatherhead\10-Nov-2019\CompetitorList.xls" />
+    <Content Include="ResultFiles\Leatherhead\10-Nov-2019\Result1.pdf" />
+    <Content Include="ResultFiles\Leatherhead\10-Nov-2019\Result2.pdf" />
+    <Content Include="ResultFiles\Leatherhead\10-Nov-2019\Result3.pdf" />
+    <Content Include="ResultFiles\Leatherhead\10-Nov-2019\Result4.pdf" />
     <None Include="Scripts\Lib\jquery-1.8.2.intellisense.js" />
     <Content Include="ResultFiles\Leatherhead\26-Jan-2014\Temporary.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -447,7 +452,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="ResultFiles\Leatherhead\10-Nov-2019\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">
